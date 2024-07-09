@@ -4,6 +4,8 @@ import { Track1, Background } from "./assets";
 import { useFonts } from "expo-font";
 import ChartsScreen from "./src/screens/Charts/Charts";
 import EventScreen from "./src/screens/Ecents/Event";
+import RootNavigator from "./navigation/RootNavigator";
+
 export default function App() {
    const [fontsLoaded] = useFonts({
       regular: require("./assets/fonts/BebasNeue-Regular.ttf"),
@@ -14,12 +16,9 @@ export default function App() {
 
    return (
       <View style={styles.container}>
-         {/* <Text style={{ fontFamily: "regular", fontSize: 30 }}>
-            Open up App.js to start working on your app!
-         </Text>
+         <RootNavigator />
          <StatusBar style="auto" />
-         <Image source={Track1} /> */}
-         <ChartsScreen />
+         {/* <ChartsScreen /> */}
          {/* <EventScreen/> */}
       </View>
    );
@@ -31,6 +30,5 @@ const styles = StyleSheet.create({
       backgroundColor: "#fff",
       alignItems: "center",
       justifyContent: "center",
-      
    },
 });
