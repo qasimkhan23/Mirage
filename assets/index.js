@@ -21,6 +21,7 @@ import Rect2 from './rect2.png';
 import Stars from './star.png';
 import tickets from './ticket.png';
 import background from "./Background.png";
+import splash from "./splash.png";
 
 
 
@@ -47,3 +48,4 @@ export const RectTwo = Rect2;
 export const Star = Stars;
 export const Ticket = tickets;
 export const Background = background;
+export const Splash = splash;

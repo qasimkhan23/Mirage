@@ -8,6 +8,7 @@ import {
    Platform,
 } from "react-native";
 import { Splash } from "../../../assets";
+import ChartsScreen from "../Charts/Charts";
 
 const OS = Platform.OS;
 
@@ -18,23 +19,28 @@ const SplashScreen = ({ navigation }) => {
       });
    };
 
+   console.log('navigatuiobn',navigation)
+
    return (
-      <View style={{ backgroundColor: "red" }}>
-         <Image source={Splash} style={styles.backgroundImage} />
-      </View>
+      <View style={styles.slide}>
+
+         {/* <Text>sdjfhlsdk</Text> */}
+         <Image source={Splash} style={styles.backgroundImage}/>
+         <ChartsScreen/>
+       </View>
    );
 };
 
 const styles = StyleSheet.create({
    slide: {
       flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
+   
    },
    backgroundImage: {
-      ...StyleSheet.absoluteFillObject,
+      // ...StyleSheet.absoluteFillObject,
       width: "100%",
       height: "100%",
+      objectFit:'cover'
    },
 });
 
