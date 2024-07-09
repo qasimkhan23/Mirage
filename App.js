@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, ImageBackground } from "react-native";
 import { Track1, Background } from "./assets";
 import { useFonts } from "expo-font";
 import ChartsScreen from "./src/screens/Charts/Charts";
+import EventScreen from "./src/screens/Ecents/Event";
 export default function App() {
    const [fontsLoaded] = useFonts({
       regular: require("./assets/fonts/BebasNeue-Regular.ttf"),
@@ -19,6 +20,7 @@ export default function App() {
          <StatusBar style="auto" />
          <Image source={Track1} /> */}
          <ChartsScreen />
+         {/* <EventScreen/> */}
       </View>
    );
 }
@@ -29,5 +31,6 @@ const styles = StyleSheet.create({
       backgroundColor: "#fff",
       alignItems: "center",
       justifyContent: "center",
+      
    },
 });
