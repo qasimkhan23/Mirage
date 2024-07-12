@@ -9,7 +9,7 @@ import {
    ImageBackground,
 } from "react-native";
 import {Background, LogoLeft, LogoRight, BackBtn, Top50, Rect, Track1, Track2, trendF, One, Second, Third, AwardLogo, ThreeDays, PinkRect, MusicLogo, AwardOne, AwardTwo   } from "../../../assets";
-
+import BottomNavBar from "../../components/Footer/Footer";
 import styles from "./Styles";
 
 const ChartsScreen = ({ navigation }) => {
@@ -164,7 +164,11 @@ const ChartsScreen = ({ navigation }) => {
          </ScrollView> 
          
          </ScrollView> 
+<<<<<<< HEAD
          </View>
+=======
+         <BottomNavBar/>
+>>>>>>> 8f6e5e8db9835bdb5112a28823d04841bfb823b2
       </ImageBackground>
    );
 };

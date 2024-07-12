@@ -20,6 +20,7 @@ import Rect1 from './rect1.png';
 import Rect2 from './rect2.png';
 import Stars from './star.png';
 import tickets from './ticket.png';
+<<<<<<< HEAD
 import pic from './pic.png';
 import pictwo from './pic2.png';
 import duaone from './Dua1.png';
@@ -43,6 +44,10 @@ import gallBackground from './gabc.png';
 import shopBackground from './shbc.png';
 import backgroundEvent from './evbc.png';
 import background from "./evbc.png";
+=======
+import background from "./Background.png";
+import splash from "./splash.png";
+>>>>>>> 8f6e5e8db9835bdb5112a28823d04841bfb823b2
 
 
 
@@ -91,3 +96,4 @@ export const GallBackground = gallBackground;
 export const ShopBackground = shopBackground;
 export const BackgroundEvent= backgroundEvent;
 export const Background = background;
+export const Splash = splash;
