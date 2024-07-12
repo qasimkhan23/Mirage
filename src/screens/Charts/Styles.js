@@ -9,11 +9,17 @@ const styles = StyleSheet.create({
       width: '100%',
       height: '100%',
       resizeMode: 'cover',
-      // paddingTop: 35,
-      // paddingLeft: 10,
-      // paddingRight: 10,
    },
-   topCont: {
+   bigContainer: {
+         display:'flex',
+      flex: 1,
+      // alignItems: 'center',
+      marginHorizontal:5,
+      fontFamily:'regular',
+      // height:'100%'
+   },
+
+         topConta: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -38,20 +44,83 @@ const styles = StyleSheet.create({
       fontSize:12.1,
       fontFamily:'regular',
    },
-   backBtn:{
-      position: 'absolute',
-      top:70,
-      left:0,
+      pagelogo:{
+      flexDirection:'row',
+      alignItems:'center',
+      width:'100%',
+      justifyContent:'space-between',
+        
    },
-   Btn: {
-      width: 20,
-      height: 24,
+   pageTop:{
+      flex:0.7,
+      textAlign:'center',
+      justifyContent:'center',
+      marginTop:12,
+     
+      
    },
+   topText:{
+      color: '#fff',
+      fontSize:30,
+      fontFamily:'regular',
+      marginHorizontal:-13,
+   },
+   backBtn:{  
+      // display:'flex',
+      // flex:1,
+      justifyContent:'flex-start',
+   },
+   Btn:{
+      width:35,
+      height:20,
+      resizeMode:'contain',     
+      marginLeft:-5,
+   },
+   // topCont: {
+   //    flexDirection: 'row',
+   //    justifyContent: 'space-between',
+   //    alignItems: 'center',
+   //    width: '100%',
+   //    paddingHorizontal: 20,
+   //    marginTop:35,
+   // },
+
+   // logoCont: {
+   //    flexDirection: 'row',
+   //    alignItems: 'center',
+   // },
+
+   // logo: {
+   //    width: 20,  
+   //    height: 20, 
+   //    marginRight: 12,
+   // },
+
+   // logoText:{
+   //    color: '#fff',
+   //    fontSize:12.1,
+   //    fontFamily:'regular',
+   // },
+   // backBtn:{
+   //    position: 'absolute',
+   //    top:70,
+   //    left:0,
+   // },
+   // Btn: {
+   //    width: 20,
+   //    height: 24,
+   // },
 
    text:{
       color:'#fff',
       fontSize:'18',
       fontFamily:'regular',
+   },
+   
+verticalScrollView: {
+      display:'flex',
+      flex:1,
+      paddingHorizontal:10,
    },
 
 
@@ -60,8 +129,9 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       alignItems: 'center',
       width: '95%',
-      paddingHorizontal: 20,
-      marginTop: 70,
+      paddingHorizontal: 10,
+      marginTop:15,
+      
    },
    leftText:{
       flexDirection:'row',
@@ -103,9 +173,11 @@ const styles = StyleSheet.create({
       // flexDirection:'row',
       // width: '100%',
       
-      paddingHorizontal: 20,
-      marginTop: 10,
-      marginLeft:12,
+      // paddingHorizontal: -15,
+      marginTop: 5,
+
+      // marginLeft:10,
+      // right:15,
    },
    // firstTrack:{
    //    flexDirection:'column',
@@ -116,7 +188,7 @@ const styles = StyleSheet.create({
    image1:{
       width:150,
       height:150,
-      // marginRight:10,
+      marginRight:8,
    },
    textTrack:{
       display:'flex',
@@ -142,20 +214,20 @@ const styles = StyleSheet.create({
    image2:{
       width:150,
       height:150,
-      marginRight:10,
+      marginRight:8,
    },
    image3:{
       width:150,
       height:150,
-      marginRight:10,
+      marginRight:8,
    },
 artistSec: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems:'center',
       width: '95%',
-      paddingHorizontal: 20,
-      marginTop: 10,
+      paddingHorizontal: 10,
+      marginTop: 15,
 },
 logos:{
       flexDirection:'row',
@@ -166,7 +238,7 @@ trendImg:{
       width:22,
       height:22,
       marginBottom: 2,
-      marginRight: 6,
+      marginRight: 4,
       resizeMode: 'contain',
 },
 trendText:{
@@ -177,8 +249,8 @@ trendText:{
 
 
 trendSec:{
-   flexDirection:'row',
-   width:'100%',
+   flexDirection:'row',  
+   // width:'90%',
    
 },
 
@@ -187,7 +259,7 @@ sieImg:{
       height:95,
       marginTop: 20,
       marginRight:10,
-      marginLeft: 25,
+      
    },
 bigImg:{
       width:95,
@@ -219,7 +291,7 @@ awardSec: {
    flexDirection: 'row',
    justifyContent: 'space-between',
    paddingHorizontal: 20,
-   marginTop: 20,
+   marginTop: 15,
    width: '100%',
 },
 logos: {
@@ -229,7 +301,6 @@ logos: {
 awardImg: {
    width: 25,
    height: 25,
-   marginRight: 10,
    resizeMode: 'contain',
 },
 makeCol: {
@@ -253,7 +324,7 @@ voteText: {
 rectanglee: {
    width: 80,
    height: 50,
-   marginHorizontal: 25,
+   marginHorizontal: 15,
    resizeMode: 'contain',
 },
 logomusic: {
@@ -274,27 +345,27 @@ rectaText: {
 },
 
 awardImages:{
-      flexDirection:'row',
-      width: '100%',
-      paddingHorizontal: 20,
+      // flexDirection:'row',
+      // width: '100%',
+      // paddingHorizontal: 20,
       marginTop: 10,
-      marginLeft:12,
+      // marginLeft:12,
 },
 awardImages1:{
       width:150,
       height:150,
-      marginRight:10,
+      marginHorizontal:8,
 },
 awardImages2:{
       width:150,
       height:150,
-      marginRight:10,
+   marginHorizontal:8,
 },
 
 awardImages3:{
       width:150,
       height:150,
-      marginRight:10,
+      marginHorizontal:8,
 },
 
 });

@@ -4,6 +4,8 @@ import { Track1, Background } from "./assets";
 import { useFonts } from "expo-font";
 import ChartsScreen from "./src/screens/Charts/Charts";
 import EventScreen from "./src/screens/Ecents/Event";
+import ShopScreen from "./src/screens/Shop/shop";
+import GalleryScreen from "./src/screens/Gallery/gallery";
 export default function App() {
    const [fontsLoaded] = useFonts({
       regular: require("./assets/fonts/BebasNeue-Regular.ttf"),
@@ -19,8 +21,10 @@ export default function App() {
          </Text>
          <StatusBar style="auto" />
          <Image source={Track1} /> */}
-         <ChartsScreen />
+         {/* <ChartsScreen /> */}
          {/* <EventScreen/> */}
+         <ShopScreen/>
+         {/* <GalleryScreen/> */}
       </View>
    );
 }
