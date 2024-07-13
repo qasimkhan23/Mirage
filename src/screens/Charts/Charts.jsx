@@ -165,6 +165,7 @@ const ChartsScreen = ({ navigation }) => {
          
          </ScrollView> 
          </View>
+                  {/* <BottomNavBar/> */}
       </ImageBackground>
    );
 };
