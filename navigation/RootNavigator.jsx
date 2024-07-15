@@ -8,15 +8,15 @@ import SplashStackScreens from "./SplashStack";
 import { NavigationContainer } from "@react-navigation/native";
 // import VirtualVisiteStackScreens from "./VirtualVisiteStack";
 // import ProStackScreens from "./ProStack";
+import ChartsStackScreens from "./ChartsStack";
 import SplashScreen from "../src/screens/Splash/Splash";
-import ChartScreen from "../src/screens/Charts/Charts";
-import EventScreen from "../src/screens/Ecents/Event";
+import EventScreen from "../src/screens/Events/Event";
 import ShopScreen from "../src/screens/Shop/shop";
 import RadioScreen from "../src/screens/Radio/Radio";
 import HomeScreen from "../src/screens/Home/home";
-import ProfileScreen from "../src/screens/Profile/profile";
+import GalleryScreen from "../src/screens/Gallery/gallery";
 import { View, Text } from "react-native";
-
+import PlayerScreen from "../src/screens/Player/Player";
 const RootStack = createNativeStackNavigator();
 
 const AppNavigator = () => {
@@ -26,13 +26,17 @@ const AppNavigator = () => {
             initialRouteName={"HomeScreen"}
             screenOptions={{ headerShown: false }}
          >
-            <RootStack.Screen component={ChartScreen} name="ChartScreen" />
+            <RootStack.Screen
+               component={ChartsStackScreens}
+               name="ChartsStack"
+            />
             <RootStack.Screen component={ShopScreen} name="ShopScreen" />
             <RootStack.Screen component={RadioScreen} name="RadioScreen" />
             <RootStack.Screen component={HomeScreen} name="HomeScreen" />
             <RootStack.Screen component={EventScreen} name="EventScreen" />
-            <RootStack.Screen component={ProfileScreen} name="ProfileScreen" />
+            <RootStack.Screen component={GalleryScreen} name="GalleryScreen" />
 
+            <RootStack.Screen component={PlayerScreen} name="PlayerScreen" />
          </RootStack.Navigator>
       </NavigationContainer>
    );

@@ -44,6 +44,7 @@ import {
    CardOne,
    CardPa,
 } from "../../../assets";
+import Footer from "../../components/Footer/Footer";
 
 import styles from "./styles";
 
@@ -62,7 +63,10 @@ const ShopScreen = ({ navigation }) => {
             </View>
          </View>
          <View style={styles.pagelogo}>
-            <TouchableOpacity style={styles.backBtn}>
+            <TouchableOpacity
+               style={styles.backBtn}
+               onPress={() => navigation.goBack()}
+            >
                <Image source={BackBtn} style={styles.Btn} />
             </TouchableOpacity>
 
@@ -171,6 +175,7 @@ const ShopScreen = ({ navigation }) => {
                </View>
             </ScrollView>
          </View>
+         {/* <Footer /> */}
       </ImageBackground>
    );
 };
