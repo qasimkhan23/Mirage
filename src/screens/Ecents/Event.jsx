@@ -39,27 +39,6 @@ const EventScreen = ({ navigation }) => {
       <ScrollView style={styles.verticalScrollView} contentContainerStyle={{
      }}>
 
-          {/* <View style={styles.topConta}>
-            <View style={styles.logoCont}>
-              <Image source={LogoLeft} style={styles.logo} />
-               <Text style={styles.logoText}>5400</Text>
-            </View>
-                     
-            <View style={styles.logoCont}>
-               <Image source={LogoRight} style={styles.logo} />
-               <Text style={styles.logoText}>234</Text>
-            </View>
-            </View>
-         <View style={styles.pagelogo}>
-         <TouchableOpacity style={styles.backBtn}>
-            <Image source={BackBtn} style={styles.Btn}/>
-         </TouchableOpacity>
-
-         <View style={styles.pageTop}>
-               <Text style={styles.topText}>mirage events</Text>
-         </View>
-         </View>  */}
-
          <View style={styles.ticImage}>
        <View style={styles.ticketSec}>
                   <Image source={Ticket} style={styles.ticket} />
@@ -181,8 +160,8 @@ const EventScreen = ({ navigation }) => {
            <TouchableOpacity >
             <Image source={CardPic} style={styles.cardpic}/>
            </TouchableOpacity>
-
-<TouchableOpacity >
+           
+           <TouchableOpacity >
             <Image source={CardPic} style={styles.cardpic}/>
            </TouchableOpacity>
 
