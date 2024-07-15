@@ -4,6 +4,8 @@ import { Track1, Background } from "./assets";
 import { useFonts } from "expo-font";
 import ChartsScreen from "./src/screens/Charts/Charts";
 import EventScreen from "./src/screens/Ecents/Event";
+import ShopScreen from "./src/screens/Shop/shop";
+import GalleryScreen from "./src/screens/Gallery/gallery";
 import RootNavigator from "./navigation/RootNavigator";
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
          <StatusBar style="auto" />
          {/* <ChartsScreen /> */}
          {/* <EventScreen/> */}
+         {/* <ShopScreen/> */}
+         {/* <GalleryScreen/> */}
       </View>
    );
 }
@@ -28,7 +32,7 @@ const styles = StyleSheet.create({
    container: {
       flex: 1,
       backgroundColor: "#fff",
-      alignItems: "center",
-      justifyContent: "center",
+      // alignItems: "center",
+      // justifyContent: "center",
    },
 });

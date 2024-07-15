@@ -8,6 +8,10 @@ import SplashStackScreens from "./SplashStack";
 import { NavigationContainer } from "@react-navigation/native";
 // import VirtualVisiteStackScreens from "./VirtualVisiteStack";
 // import ProStackScreens from "./ProStack";
+import SplashScreen from "../src/screens/Splash/Splash";
+import ChartScreen from "../src/screens/Charts/Charts";
+import ShopScreen from '../src/screens/Shop/shop'
+import {View, Text} from 'react-native'
 
 const RootStack = createNativeStackNavigator();
 
@@ -15,13 +19,15 @@ const AppNavigator = () => {
    return (
       <NavigationContainer>
          <RootStack.Navigator
-            initialRouteName={"SplashScreen"}
+            initialRouteName={"ShopScreen"}
             screenOptions={{ headerShown: false }}
          >
-            <RootStack.Screen
-               component={SplashStackScreens}
-               name="SplashStack"
-            />
+          
+                     <RootStack.Screen component={ChartScreen} name="ChartScreen" />
+                      <RootStack.Screen component={ShopScreen} name="ShopScreen" />
+
+
+
             {/* <RootStack.Screen
           component={OtpSenderStackScreens}
           name="OtpSenderStack"

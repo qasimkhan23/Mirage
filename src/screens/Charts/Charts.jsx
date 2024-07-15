@@ -9,14 +9,36 @@ import {
    ImageBackground,
 } from "react-native";
 import {Background, LogoLeft, LogoRight, BackBtn, Top50, Rect, Track1, Track2, trendF, One, Second, Third, AwardLogo, ThreeDays, PinkRect, MusicLogo, AwardOne, AwardTwo   } from "../../../assets";
-
+import BottomNavBar from "../../components/Footer/Footer";
 import styles from "./Styles";
 
 const ChartsScreen = ({ navigation }) => {
    return (
       <ImageBackground source={Background} style={[styles.container] }>
-          <ScrollView vertical>
-         <View style={styles.topCont}>
+                        <View style={styles.topConta}>
+            <View style={styles.logoCont}>
+              <Image source={LogoLeft} style={styles.logo} />
+               <Text style={styles.logoText}>5400</Text>
+            </View>
+                     
+            <View style={styles.logoCont}>
+               <Image source={LogoRight} style={styles.logo} />
+               <Text style={styles.logoText}>234</Text>
+            </View>
+            </View>
+         <View style={styles.pagelogo}>
+         <TouchableOpacity style={styles.backBtn}>
+            <Image source={BackBtn} style={styles.Btn}/>
+         </TouchableOpacity>
+
+         <View style={styles.pageTop}>
+               <Text style={styles.topText}>mirage charts</Text>
+         </View>
+         </View>
+         
+         <View style={styles.bigContainer}>
+          <ScrollView style={styles.verticalScrollView} >
+         {/* <View style={styles.topCont}>
             <View style={styles.logoCont}>
               <Image source={LogoLeft} style={styles.logo} />
                <Text style={styles.logoText}>5400</Text>
@@ -29,9 +51,9 @@ const ChartsScreen = ({ navigation }) => {
          </View>
 
 
-         <View style={styles.backBtn}>
+         <TouchableOpacity style={styles.backBtn}>
             <Image source={BackBtn} style={styles.Btn}/>
-         </View>
+         </TouchableOpacity> */}
 
 
          <View style={styles.topTrack}>
@@ -39,40 +61,40 @@ const ChartsScreen = ({ navigation }) => {
                <Image source={Top50} style={styles.topIcon}/>
                <Text style={styles.top50}> Top 50 Tracks </Text>
             </View>
-            <View style={styles.rightText}>
+            <TouchableOpacity style={styles.rightText}>
                <Image source={Rect} style={styles.rectangle}/>
                <Text style={styles.rectText}>SEE ALL</Text>
-            </View>
+            </TouchableOpacity>
          </View>
 
 
           
-            <ScrollView horizontal style={styles.trackSec} >
-           <View >
+            <ScrollView horizontal style={styles.trackSec} contentContainerStyle={{paddingHorizontal:20}} >
+           <TouchableOpacity >
             <Image source={Track1} style={styles.image1}/>
             <View style={styles.textTrack}>
             <Text style={styles.title}>Hit Me Hard And Soft</Text>
             <Text style={styles.singerName}>Billie Eilish</Text>
             <Text style={styles.by}>By <Text style={styles.changeColor}>Miles</Text></Text>
            </View>
-           </View>
+           </TouchableOpacity>
 
-            <View >
+            <TouchableOpacity >
             <Image source={Track2} style={styles.image2}/>
             <View style={styles.textTrack}>
             <Text style={styles.title}>Bohemian Rhapsody</Text>
             <Text style={styles.singerName}>Queen</Text>
             <Text style={styles.by}>By <Text style={styles.changeColor}>AlanEth</Text></Text>
-           </View></View>
+           </View></TouchableOpacity>
 
-            <View >
+            <TouchableOpacity >
             <Image source={Track1} style={styles.image3}/>
             <View style={styles.textTrack}>
             <Text style={styles.title}>Hit Me Hard And Soft</Text>
             <Text style={styles.singerName}>Billie Eilish</Text>
             <Text style={styles.by}>By <Text style={styles.changeColor}>Miles</Text></Text>
            </View>
-           </View>
+           </TouchableOpacity>
          </ScrollView>
           
 
@@ -83,38 +105,35 @@ const ChartsScreen = ({ navigation }) => {
                <Image source={trendF} style={styles.trendImg}/>
                <Text style={styles.trendText}> Trending Artists</Text>
             </View>
-            <View style={styles.rightText}>
+            <TouchableOpacity style={styles.rightText}>
                <Image source={Rect} style={styles.rectangle}/>
                <Text style={styles.rectText}>SEE ALL</Text>
-            </View>
+            </TouchableOpacity>
          </View>
 
-            <ScrollView horizontal style={styles.trendSec}>
+            <ScrollView horizontal style={styles.trendSec} contentContainerStyle={{paddingHorizontal:20}}>
             
-               <View style={styles.siee}>
+               <TouchableOpacity style={styles.siee}>
                   <Image source={One} style={styles.sieImg}/>
                   <Text  style={styles.name}>Sierra Farrel</Text>
-               </View>
+               </TouchableOpacity>
 
-            <View style={styles.to}>
+            <TouchableOpacity style={styles.to}>
                   <Image source={Second} style={styles.bigImg}/>
                   <Text  style={styles.name}>Notorious Big</Text>
-               </View>
+               </TouchableOpacity>
 
-            <View style={styles.three}>
+            <TouchableOpacity style={styles.three}>
                   <Image source={Third} style={styles.harryImg}/>
                   <Text  style={styles.name}>Harry Styles</Text>
-               </View>
+               </TouchableOpacity>
 
-            <View style={styles.siee}>
+            <TouchableOpacity style={styles.siee}>
                   <Image source={One} style={styles.sieImg2}/>
                   <Text  style={styles.name}>Sierra Farrel</Text>
-               </View>
+               </TouchableOpacity>
            
          </ScrollView>
-        
-
-
           <View style={styles.awardSec}>
             <View style={styles.logos}>
                <Image source={AwardLogo} style={styles.awardImg}/>
@@ -123,27 +142,30 @@ const ChartsScreen = ({ navigation }) => {
                <Text style={styles.trendText}> Mirage Music Awards 2025</Text>
                </View>
             </View>
-            <View style={styles.voteText}>
+            <TouchableOpacity style={styles.voteText}>
                <Image source={PinkRect} style={styles.rectanglee}/>
                 <Image source={MusicLogo} style={styles.logomusic}/>
                <Text style={styles.rectaText}>VOTE NOW</Text>
-            </View>
+            </TouchableOpacity>
          </View>
 
-          <ScrollView horizontal style={styles.awardImages}>
-            <View>
+          <ScrollView horizontal style={styles.awardImages} contentContainerStyle={{paddingHorizontal:20}}>
+            <TouchableOpacity>
                <Image source={AwardOne} style={styles.awardImages1}/>
-            </View>
+            </TouchableOpacity>
 
-            <View>
+            <TouchableOpacity>
                <Image source={AwardTwo} style={styles.awardImages2}/>
-            </View>
+            </TouchableOpacity>
 
-            <View>
+            <TouchableOpacity>
                <Image source={AwardOne} style={styles.awardImages3}/>
-            </View>
+            </TouchableOpacity>
          </ScrollView> 
+         
          </ScrollView> 
+         </View>
+                  {/* <BottomNavBar/> */}
       </ImageBackground>
    );
 };
