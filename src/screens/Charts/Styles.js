@@ -276,18 +276,24 @@ trendText: {
 voteText: {
    flexDirection: 'row',
    alignItems: 'center',
+   
 },
 rectanglee: {
-   width: 80,
-   height: 50,
-   marginHorizontal: 15,
+   marginTop:5,
+   width: 75,
+   height: 25,
+   // marginHorizontal: 15,
+   marginLeft:5,
    resizeMode: 'contain',
 },
 logomusic: {
    position:'absolute',
+   top:12,
+   marginLeft:11,
+   // left:0,
    width: 19,
    height: 15,
-   marginHorizontal: 28,
+   // marginHorizontal: 28,
    resizeMode: 'contain',
 },
 rectaText: {
@@ -296,8 +302,10 @@ rectaText: {
    fontSize: 13,
    textAlign: 'center',
    width: '55%',
-   left: 38,
+   // left: 38,
+   marginLeft:28,
    fontFamily: 'regular',
+   top:12,
 },
 
 awardImages:{

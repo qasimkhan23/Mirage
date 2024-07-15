@@ -8,7 +8,7 @@ import {
    ScrollView,
    ImageBackground,
 } from "react-native";
-import {BackgroundEvent, LogoLeft, LogoRight, BackBtn, RectOne, RectTwo, Star, Ticket, Top50, Rect, picOne, picTwo, duaOne, Search, CardLogo, FilterLogo, LegendRect, CardPic } from "../../../assets";
+import {BackgroundEvent, LogoLeft, SLogo, LogoRight, BackBtn, RectOne, RectTwo, Star, Ticket, Top50, Rect, picOne, picTwo, duaOne, Search, CardLogo, FilterLogo, LegendRect, CardPic } from "../../../assets";
 
 import styles from "./Styles";
 
@@ -106,12 +106,13 @@ const EventScreen = ({ navigation }) => {
             <Image source={CardLogo} style={styles.cardlogo}/>
             <Text style={styles.eventText}>Event's Cards</Text>
             <View style={styles.legendbox}>
-               <Image source={LegendRect} style={styles.legendRect}/>
+               {/* <Image source={LegendRect} style={styles.legendRect}/> */}
                <Text style={styles.legendText}>LEGENDARY</Text>
             </View>
          <View style={styles.iconContainer}>
-        <TouchableOpacity>
-            <Image source={Search} style={styles.searchBox}/>
+        <TouchableOpacity style={styles.searchBox}> 
+         <Text style={styles.searchText}>Search</Text>
+            <Image source={SLogo} style={styles.sLogo}/>
         </TouchableOpacity>
         <TouchableOpacity>
             <Image source={FilterLogo} style={styles.filterlogo}/>
@@ -184,7 +185,8 @@ const EventScreen = ({ navigation }) => {
             <Image source={CardPic} style={styles.cardpic}/>
            </TouchableOpacity>
            </View>
-         </ScrollView> 
+         </ScrollView>
+
 </ScrollView>
 </View>
     </ImageBackground>

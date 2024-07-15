@@ -81,40 +81,7 @@ const styles = StyleSheet.create({
       resizeMode:'contain',     
       marginLeft:-5,
    },
-   // topCont: {
-   //    flexDirection: 'row',
-   //    justifyContent: 'space-between',
-   //    alignItems: 'center',
-   //    width: '100%',
-   //    paddingHorizontal: 20,
-   //    marginTop:35,
-   // },
-
-   // logoCont: {
-   //    flexDirection: 'row',
-   //    alignItems: 'center',
-   // },
-
-   // logo: {
-   //    width: 20,  
-   //    height: 20, 
-   //    marginRight: 12,
-   // },
-
-   // logoText:{
-   //    color: '#fff',
-   //    fontSize:12.1,
-   //    fontFamily:'regular',
-   // },
-   // backBtn:{
-   //    position: 'absolute',
-   //    top:70,
-   //    left:-8,
-   // },
-   // Btn: {
-   //    width: 20,
-   //    height: 24,
-   // },
+  
 
    text:{
       color:'#fff',
@@ -122,10 +89,7 @@ const styles = StyleSheet.create({
       fontFamily:'regular',
    },
 
-   // ticImage:{
-   //    flexDirection:'column',
-   //    width:'90%'
-   // },
+
 ticketSec:{
       //    width: '100%',
       // alignItems: 'center',
@@ -156,8 +120,7 @@ starImage: {
     marginTop:-35,
     width:'80%',
     
-   //  top:-100,
-   //  right:-23, 
+   
    },
   rectOne: {
     width: '90%',
@@ -306,21 +269,27 @@ duaInfo:{
       marginRight: 5,
       // marginRight: -8,
    },
-   legendRect:{
-      width: 50,
+   legendbox:{
+      width: 55,
       height: 18,
-      position:'relative',
       justifyContent:'center',
       alignItems:'center',
       textAlign:'center',
+      color:'#fff',
+   fontSize:8,
+   borderWidth: 0.2, 
+   borderRadius: 2, 
+   borderColor: 'white',
+   backgroundColor: 'rgba(169, 169, 169,0.1)',
+   paddingHorizontal:5,
+   paddingVertical:2,
+   marginLeft:2,
+   marginRight:2,
    },
-   legendText:{
-      position:'absolute',
+   legendText:{   
       color:'#fff',
       fontSize:12,
       textAlign:'center',
-      top:2,
-      width: '100%',
       fontFamily:'regular',
    },
 iconContainer: {
@@ -328,17 +297,40 @@ iconContainer: {
     alignItems: 'center',
     
 },
-searchBox: {
-    width: 65,
-    height: 20,
-    resizeMode: 'contain',
-      
 
+
+searchBox: {
+   flexDirection:'row',
+   justifyContent:'space-between',
+   alignItems:'center',
+   width: 65,
+   height: 20,
+   color:'#fff',
+   fontSize:8,
+   borderWidth: 0.2, 
+   borderRadius: 2, 
+   borderColor: 'white',
+   backgroundColor: 'rgba(169, 169, 169,0.1)',
+   paddingHorizontal:5,
+   paddingVertical:1,
+   marginLeft:2,
 },
-filterlogo: {
+searchText:{
+      color:'#fff',
+      fontSize:8,
+      fontFamily:'regular',
+   },
+
+sLogo: {
+    width: 10,
+    height: 10,
+    resizeMode: 'contain',
+},
+
+
+   filterlogo: {
     width: 55,
     height: 20,
-    
     resizeMode: 'contain',
 },
 

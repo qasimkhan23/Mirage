@@ -257,7 +257,7 @@ logoT: {
       alignItems: 'center',
       width: '95%',
       paddingHorizontal: 10,
-      marginTop:15,
+      marginTop:45,
       
    },
    leftText:{
@@ -280,9 +280,14 @@ logoT: {
 
 
    trackSec: {
-      marginTop: 5,
+      marginTop: 0,
+      marginLeft:-15,
    },
 
+
+   num1:{
+   marginRight:15,
+},
    image1:{
       width:150,
       height:150,
@@ -292,6 +297,12 @@ logoT: {
       display:'flex',
       flexDirection:'column',
       marginLeft:10,
+      marginTop:5,
+   },
+
+   viewsline:{
+      display:'flex',
+      flexDirection:'row',
    },
    title:{
       color:'#fff',
@@ -303,9 +314,130 @@ logoT: {
    },
    viewss:{
       color:'#fff',
+      fontSize:8,
+      borderWidth: 0.4, 
+      borderRadius: 6, 
+      borderColor: 'white',
+      backgroundColor: 'rgba(169, 169, 169,0.1)',
+      paddingHorizontal:5,
+      paddingVertical:1,
+      marginLeft:2, 
+   },
+
+   viewsline:{
+      flexDirection:'row',
+      alignItems:'center',
+      justifyContent:'space-between',
+   },
+   starP:{
+      flexDirection:'row',
+      marginRight:15,
+   },
+   starCont:{
+      height:10,
+      width:10,
+      position:'absolute',
+      top:-5,
+      right:-4,
+      alignItems:'center',
+      justifyContent:'center',
+   },
+   star:{
+      height:70,
+      width:70,
+      resizeMode:'contain',
+   },
+
+num2:{
+   marginHorizontal:15,
+},
+   image2:{
+      width:150,
+      height:150,
+      resizeMode:'contain',
+      marginRight:8,
+      marginTop:12,
+   },
+   textTrack2:{
+      display:'flex',
+      flexDirection:'column',
+      marginLeft:10,
+      marginTop:-8,
+   },
+
+   viewsline:{
+      display:'flex',
+      flexDirection:'row',
+   },
+   title:{
+      color:'#fff',
+      fontSize:12,
+   },
+   singerName:{
+      color:'#fff',
       fontSize:8, 
+   },
+   viewss:{
+      color:'#fff',
+      fontSize:8,
+      borderWidth: 0.4, 
+      borderRadius: 6, 
+      borderColor: 'white',
+      backgroundColor: 'rgba(169, 169, 169,0.1)',
+      paddingHorizontal:5,
+      paddingVertical:1,
+      marginLeft:2, 
+   },
+
+   viewsline:{
+      flexDirection:'row',
+      alignItems:'center',
+      justifyContent:'space-between',
+   },
+   starP:{
+      flexDirection:'row',
+      marginRight:15,
+   },
+
+   cardTop: {
+      flexDirection: 'row',
+     justifyContent:'flex-start',
+      alignItems: 'center',
+      width: '100%',
+      marginTop:45,
+   },
+
+   cardlogo:{
+      width:25,
+      height:25,
+      marginBottom: 8,
+      marginRight: 5,
+      resizeMode: 'contain',
+   },
+
+   eventText:{
+      color:'#fff',
+      fontSize: 25,
+      fontFamily:'regular',
+      marginRight: 5,
+      // marginRight: -8,
    },
 
 
+   cards: {
+      flexDirection: 'row',
+      // flexWrap:'wrap',
+      justifyContent:'space-between',
+      marginTop:2,
+      marginLeft:-20,
+      
+     },
+     cardpic:{
+      width:60,
+      height:130,
+      resizeMode:'contain',
+      marginHorizontal:5,
+      marginVertical:5,
+   },
 });
 export default styles;

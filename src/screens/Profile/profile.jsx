@@ -7,7 +7,7 @@ import {
    ScrollView,
    ImageBackground,
 } from "react-native";
-import {ShopBackground,VoiceBtn, MilesNo1, goldStar, profilePic, LogoLeft, LogoRight, BackBtn, Top50, Rect, Track1, Track2, trendF, One, Second, Third, AwardLogo, ThreeDays, PinkRect, MusicLogo, AwardOne, AwardTwo    } from "../../../assets";
+import {ShopBackground,VoiceBtn,CardLogo, CardPic, MilesNo2, MilesNo1, goldStar, profilePic, LogoLeft, LogoRight, BackBtn, Top50, Rect, Track1, Track2, trendF, One, Second, Third, AwardLogo, ThreeDays, PinkRect, MusicLogo, AwardOne, AwardTwo    } from "../../../assets";
 import styles from "./styles";
 
 const ProfileScreen = ({ navigation }) => {
@@ -100,36 +100,128 @@ const ProfileScreen = ({ navigation }) => {
 
 
 <ScrollView horizontal style={styles.trackSec} contentContainerStyle={{paddingHorizontal:20}} >
-           <TouchableOpacity >
+           <TouchableOpacity style={styles.num1}>
             <Image source={MilesNo1} style={styles.image1}/>
             <View style={styles.textTrack}>
              <View style={styles.nameAndView}>
+                <View style={styles.viewsline}>
             <Text style={styles.title}>Imagine</Text>
-            <View>
+<View style={styles.starP}>
                <Text style={styles.viewss}>21M</Text>
+               <View style={styles.starCont}>
                <Image source={goldStar} style={styles.star}/> 
+               </View>
+               </View>
             </View>
             </View>
             <Text style={styles.singerName}>John Lennon</Text>
            </View>
            </TouchableOpacity>
+           
+           <TouchableOpacity style={styles.num2}>
+            <Image source={MilesNo2} style={styles.image2}/>
+            <View style={styles.textTrack2}>
+             <View style={styles.nameAndView}>
+                <View style={styles.viewsline}>
+            <Text style={styles.title}>Lose Yourself</Text>
+<View style={styles.starP}>
+               <Text style={styles.viewss}>21M</Text>
+               
+               </View>
+            </View>
+            </View>
+            <Text style={styles.singerName}>Eminem</Text>
+           </View>
+           </TouchableOpacity>
 
-            {/* <TouchableOpacity >
-            <Image source={Track2} style={styles.image2}/>
-            <View style={styles.textTrack}>
-            <Text style={styles.title}>Bohemian Rhapsody</Text>
-            <Text style={styles.singerName}>Queen</Text>
-            <Text style={styles.by}>By <Text style={styles.changeColor}>AlanEth</Text></Text>
-           </View></TouchableOpacity>
+           <TouchableOpacity style={styles.num2}>
+            <Image source={MilesNo2} style={styles.image2}/>
+            <View style={styles.textTrack2}>
+             <View style={styles.nameAndView}>
+                <View style={styles.viewsline}>
+            <Text style={styles.title}>Lose Yourself</Text>
+<View style={styles.starP}>
+               <Text style={styles.viewss}>413K</Text>
+               
+               </View>
+            </View>
+            </View>
+            <Text style={styles.singerName}>Eminem</Text>
+           </View>
+           </TouchableOpacity>
+
+</ScrollView>
+
+<View style={styles.cardTop}>
+            <Image source={CardLogo} style={styles.cardlogo}/>
+            <Text style={styles.eventText}>Mile's Cards</Text>
+         </View>
+
+<ScrollView  horizontal contentContainerStyle={{paddingHorizontal:20}}>
+            <View style={styles.cards}>
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
 
             <TouchableOpacity >
-            <Image source={Track1} style={styles.image3}/>
-            <View style={styles.textTrack}>
-            <Text style={styles.title}>Hit Me Hard And Soft</Text>
-            <Text style={styles.singerName}>Billie Eilish</Text>
-            <Text style={styles.by}>By <Text style={styles.changeColor}>Miles</Text></Text>
+               <Image source={CardPic} style={styles.cardpic}/>
+            </TouchableOpacity>
+
+            <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+           
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
+
+           <TouchableOpacity >
+            <Image source={CardPic} style={styles.cardpic}/>
+           </TouchableOpacity>
            </View>
-           </TouchableOpacity> */}
          </ScrollView>
 
 </ScrollView>

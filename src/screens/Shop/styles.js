@@ -95,7 +95,10 @@ container: {
       paddingVertical: 10,
    },
    popCont:{
+      justifyContent:'center',
+      alignItems:'center',
       width:'100%',
+      // marginRight:40,
    },
    popimg: {
       width: 370,
@@ -104,12 +107,14 @@ container: {
    },
    popMid:{
       flexDirection:'row',
-      justifyContent:'space-around',
+      justifyContent:'space-between',
       alignItems:'center',
+      width:'70%',
       position:'absolute',
       top:'84%',
-      width:'95%',
-      paddingLeft:30,
+      left:'20%',
+      // width:'95%',
+      // paddingLeft:18,
    },
     
    deal1:{
@@ -121,11 +126,13 @@ container: {
       color: '#fff',
       fontSize: 8,
       fontFamily: 'regular',
+      // paddingLeft:25,
    },
    deal3:{
       color: '#fff',
       fontSize: 8,
       fontFamily: 'regular',
+      marginRight:-5,
    },
 
       cardAndPack:{

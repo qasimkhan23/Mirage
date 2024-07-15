@@ -70,11 +70,12 @@ container: {
 
    profileContainer: {
       flexDirection: 'row',
-      justifyContent: 'space-between', 
+      justifyContent: 'space-evenly', 
       alignItems: 'center',
       width: '100%',
       marginTop: 20,
-      marginLeft:10,
+      marginLeft:5,
+      paddingHorizontal:25,
    },
    picContainer: {
       position: 'relative',
@@ -154,6 +155,7 @@ container: {
    barImage:{
       display:'flex',
       width:200,
+      zIndex:-10,
    },
    tProg: {
       width: '100%',
