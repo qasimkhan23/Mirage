@@ -50,7 +50,7 @@ container: {
       fontSize:12.1,
       fontFamily:'regular',
    },
-      pagelogo:{
+   pagelogo:{
       flexDirection:'row',
       alignItems:'center',
       width:'100%',
@@ -82,15 +82,6 @@ container: {
       resizeMode:'contain',     
       marginLeft:-5,
    },
-   // backBtn:{
-   //    position: 'absolute',
-   //    top:70,
-   //    left:0,
-   // },
-   // Btn: {
-   //    width: 20,
-   //    height: 24, 
-   // },
 
    text:{
       color:'#fff',
@@ -98,18 +89,13 @@ container: {
       fontFamily:'regular',
    },
 
-      popsec: {
+   popsec: {
       justifyContent: 'center',
       alignItems: 'center',
       paddingVertical: 10,
    },
    popCont:{
       width:'100%',
-      // display:'flex',
-      // justifyContent:'center',
-      // height:100,
-      // width:350,
-      // resizeMode:'contain',
    },
    popimg: {
       width: 370,
@@ -145,7 +131,7 @@ container: {
       cardAndPack:{
       justifyContent:'center',
       alignItems:'center',
-      marginTop:10,
+      marginTop:15,
    },
    cardAndPackH:{
       color: '#fff',
@@ -171,6 +157,7 @@ container: {
    },
    cardContainer:{
       alignItems:'center',
+      marginBottom:10,
    },
    cardAndPackImageR:{
       height:130,
@@ -219,156 +206,172 @@ container: {
       marginTop:-30,
    },
 
-//    popsec: {
-//       justifyContent: 'center',
-//       alignItems: 'center',
-//       marginTop:-80,
-//       zIndex: 10,
-//       padding: 10,
-//    },
-//    popimg: {
-//       width: '100%',
-//       height: 520,
-//       resizeMode: 'contain',
-//    },
-//    popMid: {
-//       position: 'absolute',
-//       top: '61%',
-//       left: 35,
-//       right: -5,
-//       flexDirection: 'row',
-//       justifyContent: 'space-around',
-//       alignItems: 'center',
-//    },
-//    popMid1: {
-//       color: '#fff',
-//       fontSize: 8,
-//       fontFamily: 'regular',
-//       // marginTop:10,
-//       // marginLeft:-12,
-//    },
+   buyBox:{
+      width:120,
+      height:25,
+    borderWidth: 0.2,
+    borderRadius: 2, 
+    borderColor: 'white', 
+    backgroundColor: 'rgba(169, 169, 169,0.1)', 
+    textAlign:'center',
+    alignItems:'center',
+    justifyContent:'center',
+   },
+   buyText:{
+      color: '#fff',
+      fontSize:10,
+      fontFamily: 'Arial',
+   },
 
-//    popMid2: {
-//       color: '#fff',
-//       fontSize: 8,
-//       fontFamily: 'regular',
-//       // marginLeft:-12,
-//    },
+   buyBoxRight:{
+      display:'flex',
+      flexDirection:'row',
+      alignItems:'center',
+    justifyContent:'center',
+   },
+   buyBoxM:{
+      width:30,
+      height:25,
+    borderWidth: 0.2,
+    borderRadius: 2, 
+    borderColor: 'white', 
+    backgroundColor: 'rgba(169, 169, 169,0.1)', 
+    textAlign:'center',
+    alignItems:'center',
+    justifyContent:'center',
+    
+   },
+   buyTextM:{
+      color: '#fff',
+      fontSize:16,
+      fontFamily: 'Arial',
+   },
+   buyBoxR:{
+      width:70,
+      height:25,
+    borderWidth: 0.2,
+    borderRadius: 2, 
+    borderColor: 'white', 
+    backgroundColor: 'rgba(169, 169, 169,0.1)', 
+    textAlign:'center',
+    alignItems:'center',
+    justifyContent:'center',
+    marginRight:5,
+    marginLeft:5,
+    
+   },
+   buyTextR:{
+      color: '#fff',
+      fontSize:10,
+      fontFamily: 'Arial',
+   },
 
-//    popMid3: {
-//       color: '#fff',
-//       fontSize: 8,
-//       fontFamily: 'regular',
-//       // paddingHorizontal:-20,
-//      right:11,
-//      bottom:3,
-//    },
+   buyBoxP:{
+      width:30,
+      height:25,
+    borderWidth: 0.2,
+    borderRadius: 2, 
+    borderColor: 'white', 
+    backgroundColor: 'rgba(169, 169, 169,0.1)', 
+    textAlign:'center',
+    alignItems:'center',
+    justifyContent:'center',
+   },
+   buyTextP:{
+      color: '#fff',
+      fontSize:14,
+      fontFamily: 'Arial',
+   },
 
-//     cardsec: {
-//       justifyContent: 'center',
-//       alignItems: 'center',
-//       marginTop:-190,
-//       zIndex: 10,
-//       padding: 10,
-//    },
 
-// cardimg: {
-//       width: '100%',
-//       height: 300,
-//       resizeMode: 'contain',
-//    },
-//    cardH:{
-//       color: '#fff',
-//       fontSize: 18,
-//       fontFamily: 'regular',
-//       marginTop:25,
-//       marginBottom:-50,
-//    },
-//     middleText1: {
-//       flexDirection: 'row',
-//       justifyContent: 'space-between',
-//       width: '80%',
-//    //    paddingHorizontal: 20,
-//       marginTop: -147,
-//    //    marginBottom:-250,
-//    },
-//    middleLeft: {
-//       color: '#fff',
-//       fontSize: 14,
-//       fontFamily: 'regular',
-//       marginLeft:-12,
-//    },
-//    middleRight: {
-//       color: '#fff',
-//       fontSize: 14,
-//       fontFamily: 'regular',
-//       marginRight:7,
-//    },
+   subsec: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      paddingVertical: -10,
+   },
+      subCont:{
+      width:'100%',
+      height:80,
+      justifyContent:'center',
+      alignItems:'center',
+   },
+   Subimg: {
+      width: '100%',
+      height:'100%',
+      resizeMode: 'contain',
+   },
 
-//    middleText2: {
-//       flexDirection: 'row',
-//       justifyContent: 'space-between',
-//       width: '80%',
-//       marginTop:30,
-//       marginBottom:30,
-//    },
-//       middleLeftDown: {
-//       color: '#fff',
-//       fontSize: 14,
-//       fontFamily: 'regular',
-//       marginRight:30,
-//       marginTop:-2,
-//    },
-//    middleRightDown: {
-//       color: '#fff',
-//       fontSize: 14,
-//       fontFamily: 'regular',
-//       marginTop:-2,
-//       marginLeft:45,
-//    },
+   subMid: {
+      // position:'absolute',
+      flexDirection:'row',
+      justifyContent:'space-around',
+      alignItems:'center',
+      width:'70%',
+      // marginTop:-100,
+      
+   },
+   subDeal1:{
+      color: '#fff',
+      fontSize:14,
+      fontFamily: 'regular',
+      marginTop:-15,
+   },
+   subDeal2:{
+      color: '#fff',
+      fontSize:14,
+      fontFamily: 'regular',
+      marginRight:-40,
+   },
 
-// subsec: {
-//       justifyContent: 'center',
-//       alignItems: 'center',
-//       marginTop:-90,
-//       zIndex: 10,
-//       padding: 10,
-//       marginHorizontal:10,
-//    },
-// subimg: {
-//       width: '100%',
-//       height: 260,
-//       resizeMode: 'contain',
-//    },   
+   PassPics:{
+      display:'flex',
+      flexDirection:'row',
+      justifyContent:'space-evenly',
+      alignItems:'center',
+      width:'100%',
+      paddingHorizontal:-35,
+   },
+   passTextContainer:{
+      alignItems:'center',
+      marginBottom:10,
+      flexDirection:'row',
+   },
+   passPicR:{
+      height:80,
+      width:90,
+      marginLeft:15,
+   },
+      passPicL:{
+      height:80,
+      width:90,
+   },
 
-//    subText: {
-//       position: 'absolute',
-//       bottom: 140,
-//       left: 0,
-//       right: 0,
-//       flexDirection: 'row',
-//       justifyContent: 'space-between',
-//       paddingHorizontal: 20,
-//       width:'70%',
-//    },
-//    subRight: {
-//       color: '#fff',
-//       fontSize: 14,
-//       fontFamily: 'regular',
-//       marginLeft:73,
-//    },
-//    subLeft: {
-//       color: '#fff',
-//       fontSize: 14,
-//       fontFamily: 'regular',
-//       marginLeft:108,
-//    },
-//    subH: {
-//       color: '#fff',
-//       fontSize: 18,
-//       fontFamily: 'regular',
-//       marginTop:74,
-//       marginBottom:-80,
-//    },
+
+   cardAndPackText:{
+      display:'flex',
+      flexDirection:'row',
+      justifyContent:'space-evenly',     
+   },
+   PassTextLeft:{
+      color: '#fff',
+      fontSize: 12,
+      fontFamily: 'regular',
+      
+   },
+   PassTextRight:{
+      color: '#fff',
+      fontSize: 12,
+      fontFamily: 'regular',
+   },
+   leftPassPrice1:{
+      height:25,
+      width:40,
+      marginLeft:-5,
+   },
+   rightPassPrice:{
+      height:25,
+      width:70,
+      marginLeft:-10,
+   },
 });
 export default styles;

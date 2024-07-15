@@ -8,7 +8,7 @@ import {
    ScrollView,
    ImageBackground,
 } from "react-native";
-import {Background,rightCardP,rightCardPr, leftCardP, leftCardPr, LogoLeft, LogoRight, BackBtn, Top50, Rect, Track1, Track2, trendF, One, Second, Third, AwardLogo, ThreeDays, PinkRect, MusicLogo, AwardOne, AwardTwo, ShopBackground, PopSec, SubSec, CardSec, CardOne, CardPa } from "../../../assets";
+import {Background,rightCardP,rightCardPr,vpp,vpP,mpP,mpp, MonthPass,VIPpass, leftCardP, leftCardPr, LogoLeft, LogoRight, BackBtn, Top50, Rect, Track1, Track2, trendF, One, Second, Third, AwardLogo, ThreeDays, PinkRect, MusicLogo, AwardOne, AwardTwo, ShopBackground, PopSec, SubSec, CardSec, CardOne, CardPa } from "../../../assets";
 
 import styles from "./styles";
 
@@ -59,6 +59,9 @@ const ShopScreen = ({ navigation }) => {
           <Text style={styles.TextL}>100 Mirage Gems & 10 Card Packs</Text>
           <Image style={styles.leftPrice} source={leftCardPr}/>
           <Image style={styles.leftPrice1} source={leftCardP}/>
+          <TouchableOpacity style={styles.buyBox}>
+            <Text style={styles.buyText}> BUY NOW</Text>
+          </TouchableOpacity>
         </View>
         <View style={styles.middleLine} />
         <View style={styles.cardContainer}>
@@ -66,52 +69,58 @@ const ShopScreen = ({ navigation }) => {
           <Text style={styles.TextR}>1 Mirage Card Pack </Text>
           <Image style={styles.rightPrice} source={rightCardPr}/>
           <Image style={styles.rightPrice1} source={rightCardP}/>
+
+          <View style={styles.buyBoxRight}>
+          <TouchableOpacity style={styles.buyBoxM}>
+            <Text style={styles.buyTextM}> - </Text>
+          </TouchableOpacity>
+
+          
+          <TouchableOpacity style={styles.buyBoxR}>
+            <Text style={styles.buyTextR}> BUY NOW</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.buyBoxP}>
+            <Text style={styles.buyTextP}> + </Text>
+          </TouchableOpacity>
+          </View>
         </View>
       </View>
     </View>
 
-
-
-
-
-        {/*  </View>
-
-
-         <TouchableOpacity style={styles.backBtn}>
-            <Image source={BackBtn} style={styles.Btn}/>
-         </TouchableOpacity>
-
-         <View style={styles.popsec}>
-            <Image source={PopSec} style={styles.popimg}/>
-            <View style={styles.popMid}>
-               <Text style={styles.popMid1}>10 Mirage Gem {'\n'} Pack</Text>
-               <Text style={styles.popMid2}>100 Mirage Gem {'\n'}Pack</Text>
-               <Text style={styles.popMid3}>1000 Mirage {'\n'} Gem Pack</Text>
-               </View>
-         </View>
-
-         <View style={styles.cardsec}>
-            <Text style={styles.cardH}>cardCard & Gem Packs</Text>
-            <Image source={CardSec} style={styles.cardimg} />
-            <View style={styles.middleText1}>
-               <Text style={styles.middleLeft}>100 Mirage Gems & Cards Packs</Text>
-               <Text style={styles.middleRight}>1 Mirage Card Pack</Text>
-               </View>
-                <View style={styles.middleText2}>
-               <Text style={styles.middleRightDown}>BUY NOW</Text>
-               <Text style={styles.middleLeftDown}>BUY NOW</Text>
+     <View style={styles.cardAndPack}>
+               <Text style={styles.cardAndPackH}> Subscriptions</Text>
             </View>
-         </View>
-
-        <View style={styles.subsec}>
-          <Text style={styles.subH}>Subscriptions</Text>
-            <Image source={SubSec} style={styles.subimg}/>
-            <View style={styles.subText}>
-               <Text style={styles.subRight}>Mirage Monthly Pass</Text>
-               <Text style={styles.subLeft}>Mirage VIP Pass</Text>
+            {/* <View style={styles.subsec}>
+            <View style={styles.subCont}>
+            <Image source={SubSec} style={styles.Subimg}/>
             </View>
-         </View> */}
-         
+            <View style={styles.subMid}>
+               <Text style={styles.subDeal1}>Mirage Monthly</Text>
+               <Text style={styles.subDeal2}>Mirage VIP Pass</Text>
+               </View>
+            </View> */}
+
+      
+      <View style={styles.PassPics}>
+        <View style={styles.passTextContainer}>
+          <Image style={styles.passPicL} source={MonthPass} />
+          <View>
+          <Text style={styles.PassTextLeft}>Mirage Monthly Pass</Text>
+          <TouchableOpacity>
+          <Image style={styles.leftPassPrice1} source={mpP}/></TouchableOpacity>
+          </View>
+        </View>
+        <View style={styles.passTextContainer}>
+          <Image style={styles.passPicR} source={VIPpass} />
+          <View>
+          <Text style={styles.PassTextRight}>Mirage VIP Pass </Text>
+          <TouchableOpacity>
+          <Image style={styles.rightPassPrice} source={vpp}/></TouchableOpacity>
+          </View>
+        </View>
+      </View>
+    
          </ScrollView> 
          </View>
       </ImageBackground>

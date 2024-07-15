@@ -38,22 +38,6 @@ const ChartsScreen = ({ navigation }) => {
          
          <View style={styles.bigContainer}>
           <ScrollView style={styles.verticalScrollView} >
-         {/* <View style={styles.topCont}>
-            <View style={styles.logoCont}>
-              <Image source={LogoLeft} style={styles.logo} />
-               <Text style={styles.logoText}>5400</Text>
-            </View>
-                     
-            <View style={styles.logoCont}>
-               <Image source={LogoRight} style={styles.logo} />
-               <Text style={styles.logoText}>234</Text>
-            </View>
-         </View>
-
-
-         <TouchableOpacity style={styles.backBtn}>
-            <Image source={BackBtn} style={styles.Btn}/>
-         </TouchableOpacity> */}
 
 
          <View style={styles.topTrack}>
@@ -62,7 +46,6 @@ const ChartsScreen = ({ navigation }) => {
                <Text style={styles.top50}> Top 50 Tracks </Text>
             </View>
             <TouchableOpacity style={styles.rightText}>
-               <Image source={Rect} style={styles.rectangle}/>
                <Text style={styles.rectText}>SEE ALL</Text>
             </TouchableOpacity>
          </View>
@@ -106,7 +89,6 @@ const ChartsScreen = ({ navigation }) => {
                <Text style={styles.trendText}> Trending Artists</Text>
             </View>
             <TouchableOpacity style={styles.rightText}>
-               <Image source={Rect} style={styles.rectangle}/>
                <Text style={styles.rectText}>SEE ALL</Text>
             </TouchableOpacity>
          </View>

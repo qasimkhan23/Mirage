@@ -7,6 +7,9 @@ import EventScreen from "./src/screens/Ecents/Event";
 import ShopScreen from "./src/screens/Shop/shop";
 import GalleryScreen from "./src/screens/Gallery/gallery";
 import RootNavigator from "./navigation/RootNavigator";
+import RadioScreen from "./src/screens/Radio/Radio";
+import HomeScreen from "./src/screens/Home/home";
+import ProfileScreen from "./src/screens/Profile/profile"
 
 export default function App() {
    const [fontsLoaded] = useFonts({
@@ -24,6 +27,9 @@ export default function App() {
          {/* <EventScreen/> */}
          {/* <ShopScreen/> */}
          {/* <GalleryScreen/> */}
+         {/* <RadioScreen/> */}
+         {/* <HomeScreen/> */}
+         {/* <ProfileScreen/> */}
       </View>
    );
 }

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
       // height:'100%'
    },
 
-         topConta: {
+topConta: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -76,45 +76,12 @@ const styles = StyleSheet.create({
       resizeMode:'contain',     
       marginLeft:-5,
    },
-   // topCont: {
-   //    flexDirection: 'row',
-   //    justifyContent: 'space-between',
-   //    alignItems: 'center',
-   //    width: '100%',
-   //    paddingHorizontal: 20,
-   //    marginTop:35,
-   // },
-
-   // logoCont: {
-   //    flexDirection: 'row',
-   //    alignItems: 'center',
-   // },
-
-   // logo: {
-   //    width: 20,  
-   //    height: 20, 
-   //    marginRight: 12,
-   // },
-
-   // logoText:{
-   //    color: '#fff',
-   //    fontSize:12.1,
-   //    fontFamily:'regular',
-   // },
-   // backBtn:{
-   //    position: 'absolute',
-   //    top:70,
-   //    left:0,
-   // },
-   // Btn: {
-   //    width: 20,
-   //    height: 24,
-   // },
 
    text:{
       color:'#fff',
       fontSize:'18',
       fontFamily:'regular',
+      
    },
    
 verticalScrollView: {
@@ -151,39 +118,28 @@ verticalScrollView: {
       fontFamily:'regular',
    },
    rightText: {
-      flexDirection:'row',
-      alignItems:'center',
+    display:"flex",
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
+    borderWidth: 0.2, 
+      borderRadius: 1, 
+      borderColor: 'white',
+      backgroundColor: 'rgba(169, 169, 169,0.1)',
+      paddingHorizontal:10,
+      paddingVertical:2,
+      marginLeft:10,
+},
       
-   },
-   rectangle:{
-      width: 55,
-      height: 20,
-      justifyContent:'center',
-      alignItems:'center',
-   },
    rectText:{
-      position:'absolute',
-      color:'#fff',
-      fontSize:10,
-      textAlign:'center',
-      width: '100%',
+      color: '#fff',
+      fontSize: 12,
+      fontFamily: 'regular',
    },
 
    trackSec: {
-      // flexDirection:'row',
-      // width: '100%',
-      
-      // paddingHorizontal: -15,
       marginTop: 5,
-
-      // marginLeft:10,
-      // right:15,
    },
-   // firstTrack:{
-   //    flexDirection:'column',
-   //    alignItems:'flex-start',
-      
-   // },
 
    image1:{
       width:150,
