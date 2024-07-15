@@ -2,14 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image, ImageBackground } from "react-native";
 import { Track1, Background } from "./assets";
 import { useFonts } from "expo-font";
-import ChartsScreen from "./src/screens/Charts/Charts";
-import EventScreen from "./src/screens/Ecents/Event";
-import ShopScreen from "./src/screens/Shop/shop";
-import GalleryScreen from "./src/screens/Gallery/gallery";
 import RootNavigator from "./navigation/RootNavigator";
-import RadioScreen from "./src/screens/Radio/Radio";
-import HomeScreen from "./src/screens/Home/home";
-import ProfileScreen from "./src/screens/Profile/profile"
 
 export default function App() {
    const [fontsLoaded] = useFonts({
@@ -23,13 +16,6 @@ export default function App() {
       <View style={styles.container}>
          <RootNavigator />
          <StatusBar style="auto" />
-         {/* <ChartsScreen /> */}
-         {/* <EventScreen/> */}
-         {/* <ShopScreen/> */}
-         {/* <GalleryScreen/> */}
-         {/* <RadioScreen/> */}
-         {/* <HomeScreen/> */}
-         {/* <ProfileScreen/> */}
       </View>
    );
 }
