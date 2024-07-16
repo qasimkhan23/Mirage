@@ -4,4 +4,4 @@
 - npm install (make sure you are inside the cloned repo folder)
 - npm start
 
-![ScreenShot](https://raw.githubusercontent.com/qasimkhan23/Mirage/main/src/assets/mirage.mp4)
+![ScreenShot](https://raw.githubusercontent.com/qasimkhan23/Mirage/main/assets/mirage.mp4)
