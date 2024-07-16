@@ -175,7 +175,7 @@ const ShopScreen = ({ navigation }) => {
                </View>
             </ScrollView>
          </View>
-         {/* <Footer /> */}
+         <Footer />
       </ImageBackground>
    );
 };

@@ -42,7 +42,7 @@ const BottomNavBar = () => {
                   <Image source={FooterHome} style={styles.homeIcon} />
                </TouchableOpacity>
                <TouchableOpacity
-                  onPress={() => navigation.navigate("HomeScreen")}
+                  onPress={() => navigation.navigate("StudioScreen")}
                >
                   <Image source={FooterStudio} style={styles.studioIcon} />
                </TouchableOpacity>

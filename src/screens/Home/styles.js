@@ -16,6 +16,7 @@ container: {
       marginHorizontal:5,
       fontFamily:'regular',
       // height:'100%'
+      marginBottom: 100,
    },
    verticalScrollView: {
       // width: '100%',
@@ -259,7 +260,7 @@ level: {
       height:100,
       justifyContent:'center',
       alignItems:'center', 
-        
+      marginBottom:20,
  
    },
    dimond:{
@@ -267,6 +268,51 @@ level: {
     height: '100%',
     resizeMode:'contain',
    },
+
+
+   ticketSec:{
+      //    width: '100%',
+      // alignItems: 'center',
+      // marginVertical: 20,
+      // position: 'relative',
+},
+
+ticket:{
+   width:'100%',
+   height:100,
+   marginTop:10,
+   // position:'relative',
+
+},
+
+starImage: {
+      position: 'absolute',
+      top: 0,
+      right: 0,
+   width:45,
+   height:45,
+  },
+
+   ticketBottom: {
+    flexDirection: 'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    marginTop:-35,
+    width:'80%',
+    
+   
+   },
+  rectOne: {
+    width: '90%',
+    height: 80, 
+    resizeMode: 'contain',
+    marginRight: 10,
+  },
+  rectTwo: {
+    width: 70,
+    height: 85,  
+    resizeMode: 'contain',
+  },
 });
 
 export default styles;

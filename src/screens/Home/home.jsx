@@ -23,6 +23,10 @@ import {
    profilePic,
    ProfilePicFrame,
    LevelFrame,
+   Ticket,
+   Star,
+   RectOne,
+   RectTwo
 } from "../../../assets";
 import Footer from "../../components/Footer/Footer";
 import styles from "./styles";
@@ -103,6 +107,22 @@ const HomeScreen = ({ navigation }) => {
                <View style={styles.dimondPic}>
                   <Image source={Diamond} style={styles.dimond} />
                </View>
+
+            <View style={styles.ticImage}>
+                  <View style={styles.ticketSec}>
+                     <Image source={Ticket} style={styles.ticket} />
+                     <Image source={Star} style={styles.starImage} />
+                  </View>
+                  <View style={styles.ticketBottom}>
+                     <Image source={RectOne} style={styles.rectOne} />
+                     <TouchableOpacity>
+                        <Image source={RectTwo} style={styles.rectTwo} />
+                     </TouchableOpacity>
+                  </View>
+               </View>
+
+
+
             </ScrollView>
          </View>
          <Footer />

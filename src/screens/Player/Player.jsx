@@ -48,7 +48,7 @@ import {
 } from "../../../assets";
 import Footer from "../../components/Footer/Footer";
 import AudioSlider from "../../components/AudioSlider/AudioSlider";
-import AudioFile from "../../../assets/counting.m4a";
+import AudioFile from "../../../assets/Ishq.mp3";
 import styles from "./styles";
 
 const PlayerScreen = ({ navigation }) => {
@@ -68,15 +68,18 @@ const PlayerScreen = ({ navigation }) => {
          </View>
          <View
             style={{
-               backgroundColor: "white",
+               backgroundColor: "#2d0c2b",
                position: "absolute",
                bottom: 30,
-               right: 0,
-               left: 0,
+               right: 5,
+               left: 5,
+               borderRadius:10,
+               marginBottom:100
             }}
          >
             <AudioSlider audio={AudioFile} />
          </View>
+          <Footer />
       </ImageBackground>
    );
 };

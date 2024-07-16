@@ -29,7 +29,7 @@ import {
    LegendRect,
    CardPic,
 } from "../../../assets";
-
+import Footer from "../../components/Footer/Footer";
 import styles from "./Styles";
 
 const EventScreen = ({ navigation }) => {
@@ -235,6 +235,7 @@ const EventScreen = ({ navigation }) => {
                </ScrollView>
             </ScrollView>
          </View>
+          <Footer />
       </ImageBackground>
    );
 };

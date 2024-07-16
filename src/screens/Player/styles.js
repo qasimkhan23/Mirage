@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
       marginHorizontal: 5,
       fontFamily: "regular",
       // height:'100%'
+      marginBottom: 100,
    },
    verticalScrollView: {
       // width: '100%',

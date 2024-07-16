@@ -112,7 +112,7 @@ export default class AudioSlider extends PureComponent {
    pause = async () => {
       await this.soundObject.pauseAsync();
       this.setState({ playing: false }); // This is for the play-button to go to pause
-      Animated.timing(this.state.dotOffset).stop(); // Will also call animationPausedOrStopped()
+      Animated.timing(this.state.dotOffset,{useNativeDriver:false}).stop(); // Will also call animationPausedOrStopped()
    };
 
    startMovingDot = async () => {
@@ -123,6 +123,7 @@ export default class AudioSlider extends PureComponent {
          toValue: { x: this.state.trackLayout.width, y: 0 },
          duration: durationLeft,
          easing: Easing.linear,
+         useNativeDriver:false
       }).start(() => this.animationPausedOrStopped());
    };
 
@@ -203,9 +204,9 @@ export default class AudioSlider extends PureComponent {
                   onPress={this.onPressPlayPause}
                >
                   {this.state.playing ? (
-                     <MaterialIcons name="pause" size={30} color="black" />
+                     <MaterialIcons name="pause" size={30} color="white" />
                   ) : (
-                     <Entypo name="controller-play" size={30} color="black" />
+                     <Entypo name="controller-play" size={30} color="white" />
                   )}
                </TouchableOpacity>
 
@@ -218,7 +219,7 @@ export default class AudioSlider extends PureComponent {
                      alignItems: "center",
                      height: TRACK_SIZE,
                      borderRadius: TRACK_SIZE / 2,
-                     backgroundColor: "black",
+                     backgroundColor: "#1a111b",
                   }}
                >
                   <Animated.View
@@ -258,7 +259,7 @@ export default class AudioSlider extends PureComponent {
                            width: THUMB_SIZE,
                            height: THUMB_SIZE,
                            borderRadius: THUMB_SIZE / 2,
-                           backgroundColor: "rgba(0,0,0,0.5)",
+                           backgroundColor: "rgba(255,255,255,0.5)",
                         }}
                      ></View>
                   </Animated.View>

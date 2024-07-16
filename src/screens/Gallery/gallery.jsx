@@ -33,34 +33,41 @@ import {
    SubSec,
    CardSec,
    TC,
+   CardPic
 } from "../../../assets";
 
 import styles from "./styles";
+import Footer from "../../components/Footer/Footer";
 
 const GalleryScreen = ({ navigation }) => {
    return (
       <ImageBackground source={GallBackground} style={[styles.container]}>
          <ScrollView style={styles.verticalScrollView}>
+            <View style={styles.topConta}>
+            <View style={styles.logoCont}>
+               <Image source={LogoLeft} style={styles.logo} />
+               <Text style={styles.logoText}>5400</Text>
+            </View>
+
+            <View style={styles.logoCont}>
+               <Image source={LogoRight} style={styles.logo} />
+               <Text style={styles.logoText}>234</Text>
+            </View>
+         </View>
+         <View style={styles.pagelogo}>
+            <TouchableOpacity
+               style={styles.backBtn}
+               onPress={() => navigation.goBack()}
+            >
+               <Image source={BackBtn} style={styles.Btn} />
+            </TouchableOpacity>
+
+            <View style={styles.pageTop}>
+               <Text style={styles.topText}>mirage gallery</Text>
+            </View>
+         </View>
             <View style={styles.bigContainer}>
-               <View style={styles.topCont}>
-                  <View style={styles.logoCont}>
-                     <Image source={LogoLeft} style={styles.logo} />
-                     <Text style={styles.logoText}>5400</Text>
-                  </View>
-
-                  <View style={styles.logoCont}>
-                     <Image source={LogoRight} style={styles.logo} />
-                     <Text style={styles.logoText}>234</Text>
-                  </View>
-               </View>
-
-               <TouchableOpacity
-                  style={styles.backBtn}
-                  onPress={() => navigation.goBack()}
-               >
-                  <Image source={BackBtn} style={styles.Btn} />
-               </TouchableOpacity>
-
+               
                <View style={styles.cardsH}>
                   <Text style={styles.cardT}>ALL CARDS</Text>
                </View>
@@ -78,59 +85,150 @@ const GalleryScreen = ({ navigation }) => {
                      <Text style={styles.rectText}>SEE ALL</Text>
                   </TouchableOpacity>
                </View>
+               
 
                <ScrollView
                   horizontal
                   contentContainerStyle={{ paddingHorizontal: 20 }}
                >
-                  <View style={styles.cards}>
+                  <View style={styles.cardSec}>
                      <TouchableOpacity>
+                        <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
 
                      <TouchableOpacity>
+                        <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
 
                      <TouchableOpacity>
+                        <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
 
                      <TouchableOpacity>
+                       <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
 
                      <TouchableOpacity>
+                        <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
 
                      <TouchableOpacity>
+                       <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
 
                      <TouchableOpacity>
+                        <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
 
                      <TouchableOpacity>
+                       <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
 
                      <TouchableOpacity>
+                        <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
-                     </TouchableOpacity>
-
-                     <TouchableOpacity>
-                        <Image source={LegCar} style={styles.LCard} />
+                        </View>
                      </TouchableOpacity>
                   </View>
                </ScrollView>
 
-               <View style={styles.expcar}>
+            
+
+            <View style={styles.expcar}>
                   <Text style={styles.expT}>Explore Cards</Text>
+                  <View style={styles.legendbox}>
+                     <Text style={styles.legendText}>LEGENDARY</Text>
+                  </View>
                </View>
-            </View>
+
+                <ScrollView horizontal
+                style={styles.trackHor}
+                  contentContainerStyle={{ paddingHorizontal: 20 }}>
+                  <View style={styles.smallCards}>
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+
+                     <TouchableOpacity>
+                        <Image source={CardPic} style={styles.cardpic} />
+                     </TouchableOpacity>
+                  </View>
+               </ScrollView>
+
+</View>
          </ScrollView>
+        <Footer />
       </ImageBackground>
    );
 };

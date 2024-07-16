@@ -171,6 +171,7 @@ const PackScreen = ({ navigation }) => {
                </View>
             </ScrollView>
          </View>
+          <Footer />
       </ImageBackground>
    );
 };

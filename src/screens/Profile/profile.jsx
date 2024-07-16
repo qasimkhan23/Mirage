@@ -264,7 +264,7 @@ const ProfileScreen = ({ navigation }) => {
                </ScrollView>
             </ScrollView>
          </View>
-         {/* <Footer /> */}
+         <Footer />
       </ImageBackground>
    );
 };

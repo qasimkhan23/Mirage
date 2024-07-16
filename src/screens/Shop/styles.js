@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
       flex: 1,
       // alignItems: 'center',
       marginHorizontal: 5,
+      marginBottom: 100,
       fontFamily: "regular",
       // height:'100%'
    },
@@ -235,7 +236,7 @@ const styles = StyleSheet.create({
    buyText: {
       color: "#fff",
       fontSize: 10,
-      fontFamily: "Arial",
+      // fontFamily: "Arial",
    },
 
    buyBoxRight: {
@@ -258,7 +259,7 @@ const styles = StyleSheet.create({
    buyTextM: {
       color: "#fff",
       fontSize: 16,
-      fontFamily: "Arial",
+      // fontFamily: "Arial",
    },
    buyBoxR: {
       width: 70,
@@ -276,7 +277,7 @@ const styles = StyleSheet.create({
    buyTextR: {
       color: "#fff",
       fontSize: 10,
-      fontFamily: "Arial",
+      // fontFamily: "Arial",
    },
 
    buyBoxP: {
@@ -293,7 +294,7 @@ const styles = StyleSheet.create({
    buyTextP: {
       color: "#fff",
       fontSize: 14,
-      fontFamily: "Arial",
+      // fontFamily: "Arial",
    },
 
    subsec: {

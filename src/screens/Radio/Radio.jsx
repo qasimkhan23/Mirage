@@ -75,9 +75,9 @@ const RadioScreen = ({ navigation }) => {
          <View style={styles.bigContainer}>
             <ScrollView style={styles.verticalScrollView}>
                <View style={styles.aboveRadio}></View>
-               <View style={styles.radioContainer}>
+               <TouchableOpacity style={styles.radioContainer}  onPress={()=>navigation.navigate("PlayerScreen")}>
                   <Image source={RadioStation} style={styles.radioImage} />
-               </View>
+               </TouchableOpacity>
             </ScrollView>
          </View>
          <Footer />
