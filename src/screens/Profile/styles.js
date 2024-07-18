@@ -315,6 +315,17 @@ const styles = StyleSheet.create({
       marginLeft:2, 
    },
 
+   views:{
+      color:'#fff',
+      fontSize:8,
+      borderWidth: 0.4, 
+      borderRadius: 6, 
+      borderColor: 'white',
+      backgroundColor: 'rgba(169, 169, 169,0.1)',
+      paddingHorizontal:5,
+      paddingVertical:1,
+      marginLeft:2, 
+   },
    viewsline:{
       flexDirection:'row',
       alignItems:'center',
@@ -339,6 +350,73 @@ const styles = StyleSheet.create({
       resizeMode:'contain',
    },
 
+
+   legendbox:{
+      width: 55,
+      height: 18,
+      justifyContent:'center',
+      alignItems:'center',
+      textAlign:'center',
+      color:'#fff',
+   fontSize:8,
+   borderWidth: 0.2, 
+   borderRadius: 2, 
+   borderColor: 'white',
+   backgroundColor: 'rgba(169, 169, 169,0.1)',
+   paddingHorizontal:5,
+   paddingVertical:2,
+   marginLeft:2,
+   marginRight:2,
+   },
+   legendText:{   
+      color:'#fff',
+      fontSize:12,
+      textAlign:'center',
+      fontFamily:'regular',
+   },
+iconContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    
+},
+
+
+searchBox: {
+   flexDirection:'row',
+   justifyContent:'space-between',
+   alignItems:'center',
+   width: 65,
+   height: 20,
+   color:'#fff',
+   fontSize:8,
+   borderWidth: 0.2, 
+   borderRadius: 2, 
+   borderColor: 'white',
+   backgroundColor: 'rgba(169, 169, 169,0.1)',
+   paddingHorizontal:5,
+   paddingVertical:1,
+   marginLeft:2,
+},
+searchText:{
+      color:'#fff',
+      fontSize:8,
+      fontFamily:'regular',
+   },
+
+sLogo: {
+    width: 10,
+    height: 10,
+    resizeMode: 'contain',
+    
+},
+
+
+   filterlogo: {
+    width: 55,
+    height: 20,
+    resizeMode: 'contain',
+    marginRight:10,
+},
 num2:{
    marginHorizontal:15,
 },
@@ -392,7 +470,7 @@ num2:{
 
    cardTop: {
       flexDirection: 'row',
-     justifyContent:'flex-start',
+     justifyContent:'space-between',
       alignItems: 'center',
       width: '100%',
       marginTop:45,
@@ -402,7 +480,7 @@ num2:{
       width:25,
       height:25,
       marginBottom: 8,
-      marginRight: 5,
+      marginRight:-10,
       resizeMode: 'contain',
    },
 
@@ -410,7 +488,7 @@ num2:{
       color:'#fff',
       fontSize: 25,
       fontFamily:'regular',
-      marginRight: 5,
+      
       // marginRight: -8,
    },
 

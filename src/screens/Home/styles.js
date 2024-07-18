@@ -293,6 +293,49 @@ starImage: {
    height:45,
   },
 
+//    ticketBottom: {
+//     flexDirection: 'row',
+//     justifyContent:'space-between',
+//     alignItems:'center',
+//     marginTop:-35,
+//     width:'80%',
+    
+   
+//    },
+//   rectOne: {
+//     width: '90%',
+//     height: 80, 
+//     resizeMode: 'contain',
+//     marginRight: 10,
+//   },
+//   rectTwo: {
+//     width: 70,
+//     height: 85,  
+//     resizeMode: 'contain',
+//   },
+//   ticketSec:{
+//       //    width: '100%',
+//       // alignItems: 'center',
+//       // marginVertical: 20,
+//       // position: 'relative',
+// },
+
+// ticket:{
+//    width:'100%',
+//    height:100,
+//    marginTop:5,
+//    // position:'relative',
+
+// },
+
+starImage: {
+      position: 'absolute',
+      top: 0,
+      right: 0,
+   width:45,
+   height:45,
+  },
+
    ticketBottom: {
     flexDirection: 'row',
     justifyContent:'space-between',
@@ -303,15 +346,23 @@ starImage: {
    
    },
   rectOne: {
-    width: '90%',
-    height: 80, 
+    width: '60%',
+    height: 90, 
     resizeMode: 'contain',
     marginRight: 10,
+    marginTop:-10,
+  },
+  rectSc: {
+    width: 50,
+    height: 85,  
+    resizeMode: 'contain',
+    marginLeft:30,
   },
   rectTwo: {
     width: 70,
     height: 85,  
     resizeMode: 'contain',
+    marginLeft:10,
   },
 });
 

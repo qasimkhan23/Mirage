@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
       alignItems: "center",
       width: "100%",
       height: "100%",
-      resizeMode: "cover",
+      resizeMode: "contain",
    },
    bigContainer: {
       display: "flex",
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
       justifyContent: "space-between",
    },
    pageTop: {
-      flex: 0.7,
+      flex: 0.86,
       textAlign: "center",
       justifyContent: "center",
       marginTop: 12,
@@ -86,19 +86,133 @@ const styles = StyleSheet.create({
       fontFamily: "regular",
    },
 
+   cardsH:{
+    marginTop:20,
+    paddingBottom:10,
+    justifyContent:'center',
+    alignItems:'center',
+},
+   cardT: {
+      color: '#fff',
+      fontSize: 18,
+      fontFamily: 'regular',
+      borderBottomWidth:2,
+      borderBottomColor:'rgba(255, 255, 255, 0.5)',
+   },
+
    popsec: {
-      justifyContent: "center",
-      alignItems: "center",
-      paddingVertical: 10,
+      // justifyContent: "center",
+      // alignItems: "center",
+      // paddingVertical: 10,
    },
    popCont: {
-      // width: "100%",
+      justifyContent: "center",
+      alignItems: "center",
+      width: 390,
+      height: 200,
+      marginHorizontal:-10,
    },
    popimg: {
-      width: 370,
-      height: 190,
-      resizeMode: "contain",
+      width: '100%',
+      height: '100%',
+      resizeMode: 'cover',
    },
+   Rainimg:{
+      width: 180,
+      height: 140,
+      top:0,
+      left:40,
+      position:'absolute',
+      resizeMode: 'cover',
+   },
+    daysLeft: {
+      display: "flex",
+      // flex:1,
+      // flexDirection: "row",
+      justifyContent: "flex-start",
+      alignItems: "center",
+      borderWidth: 0.2,
+      borderRadius:5,
+      borderColor: "white",
+      backgroundColor: "#9319e7",
+      width:70,
+      height:40,
+      position:'absolute',
+      bottom:20,
+      left:80,
+      
+      // paddingHorizontal: 10,
+      // paddingVertical: 20,
+      // marginLeft: 10,
+      // marginBottom:20
+   },
+    daysT: {
+      color: "#fff",
+      fontSize: 12,
+      fontFamily: "regular",
+   },
+
+   packBg:{
+      flexDirection: "row",
+      justifyContent:'center',
+      alignItems: 'center',
+      marginLeft:50,
+      
+      width:300,
+      height:43,
+      resizeMode:'contain',
+   },
+   packPic: {
+      flexDirection: "row",
+      alignItems: "center",
+      
+      justifyContent: "center",
+   },
+   eventD: {
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      marginHorizontal:10,
+      
+   },
+   event: {
+      color: "#fff",
+      fontSize: 12,
+      fontFamily: "regular",
+      marginBottom:-5,
+   },
+   mon: {
+      color: "#fff",
+      fontSize: 28,
+      fontFamily: "regular",
+      // textAlign:'center',
+   },
+
+   eventN: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      marginHorizontal:10,
+   },
+ eventN: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+   },
+   eventName: {
+      color: "#fff",
+      fontSize: 28,
+      fontFamily: "regular",
+      marginLeft:5,
+   },
+   forty: {
+      color: "#9319e7",
+      fontSize: 28,
+      fontFamily: "regular",
+      marginLeft:5,
+      marginRight:-15,
+   },
+   
    popMid:{
       flexDirection:'row',
       justifyContent:'space-between',
@@ -111,23 +225,23 @@ const styles = StyleSheet.create({
       // paddingLeft:18,
    },
     
-   deal1:{
-      color: '#fff',
-      fontSize: 8,
-      fontFamily: 'regular',
-   },
-   deal2:{
-      color: '#fff',
-      fontSize: 8,
-      fontFamily: 'regular',
-      // paddingLeft:25,
-   },
-   deal3:{
-      color: '#fff',
-      fontSize: 8,
-      fontFamily: 'regular',
-      marginRight:-5,
-   },
+   // deal1:{
+   //    color: '#fff',
+   //    fontSize: 8,
+   //    fontFamily: 'regular',
+   // },
+   // deal2:{
+   //    color: '#fff',
+   //    fontSize: 8,
+   //    fontFamily: 'regular',
+   //    // paddingLeft:25,
+   // },
+   // deal3:{
+   //    color: '#fff',
+   //    fontSize: 8,
+   //    fontFamily: 'regular',
+   //    marginRight:-5,
+   // },
 
    deal1: {
       color: "#fff",
@@ -170,20 +284,24 @@ const styles = StyleSheet.create({
       borderColor: "white", // White border color
       backgroundColor: "rgba(169, 169, 169,0.1)",
       marginTop: 30,
+      marginVertical:10,
    },
    cardContainer: {
       alignItems: "center",
       marginBottom: 10,
    },
    cardAndPackImageR: {
-      height: 130,
-      width: 80,
+      height: 100,
+      width: 130,
       top: -30,
+      // marginBottom:10,
+      marginVertical:10,
    },
    cardAndPackImageL: {
-      height: 130,
+      height: 100,
       width: 80,
       top: -30,
+      marginVertical:10,
    },
 
    cardAndPackText: {
@@ -196,21 +314,30 @@ const styles = StyleSheet.create({
       fontSize: 12,
       fontFamily: "regular",
       marginTop: -35,
+     marginVertical:5,
    },
    TextR: {
       color: "#fff",
       fontSize: 12,
       fontFamily: "regular",
       marginTop: -35,
+     marginVertical:5,
+   },
+   priceAndlogo: {
+      flexDirection: "row",
+      alignItems: "center",
+      marginBottom:5,
    },
    leftPrice: {
-      height: 30,
-      width: 40,
+      height:10,
+      width: 10,
+      resizeMode:'contain',
+      marginHorizontal:5,
    },
    leftPrice1: {
       height: 30,
-      width: 40,
-      marginTop: -30,
+      width: 30,
+      // marginTop: -30,
    },
    rightPrice: {
       height: 30,
@@ -236,7 +363,7 @@ const styles = StyleSheet.create({
    buyText: {
       color: "#fff",
       fontSize: 10,
-      fontFamily: "Arial",
+      // fontFamily: "Arial",
    },
 
    buyBoxRight: {
@@ -259,7 +386,7 @@ const styles = StyleSheet.create({
    buyTextM: {
       color: "#fff",
       fontSize: 16,
-      fontFamily: "Arial",
+      // fontFamily: "Arial",
    },
    buyBoxR: {
       width: 70,
@@ -277,7 +404,7 @@ const styles = StyleSheet.create({
    buyTextR: {
       color: "#fff",
       fontSize: 10,
-      fontFamily: "Arial",
+      // fontFamily: "Arial",
    },
 
    buyBoxP: {
@@ -294,7 +421,7 @@ const styles = StyleSheet.create({
    buyTextP: {
       color: "#fff",
       fontSize: 14,
-      fontFamily: "Arial",
+      // fontFamily: "Arial",
    },
 
    subsec: {

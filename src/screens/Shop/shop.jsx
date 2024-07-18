@@ -51,16 +51,19 @@ import styles from "./styles";
 const ShopScreen = ({ navigation }) => {
    return (
       <ImageBackground source={ShopBackground} style={[styles.container]}>
-         <View style={styles.topConta}>
-            <View style={styles.logoCont}>
+          <View style={styles.topConta}>
+            <TouchableOpacity style={styles.logoCont}
+            onPress={() => navigation.navigate("ShopScreen")}>
                <Image source={LogoLeft} style={styles.logo} />
                <Text style={styles.logoText}>5400</Text>
-            </View>
+            </TouchableOpacity>
 
-            <View style={styles.logoCont}>
+            <TouchableOpacity
+            onPress={() => navigation.navigate("PackScreen")}
+            style={styles.logoCont}>
                <Image source={LogoRight} style={styles.logo} />
                <Text style={styles.logoText}>234</Text>
-            </View>
+            </TouchableOpacity>
          </View>
          <View style={styles.pagelogo}>
             <TouchableOpacity

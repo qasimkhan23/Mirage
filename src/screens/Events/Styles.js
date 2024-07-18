@@ -124,15 +124,23 @@ starImage: {
    
    },
   rectOne: {
-    width: '90%',
-    height: 80, 
+    width: '60%',
+    height: 90, 
     resizeMode: 'contain',
     marginRight: 10,
+    marginTop:-10,
+  },
+  rectSc: {
+    width: 50,
+    height: 85,  
+    resizeMode: 'contain',
+    marginLeft:30,
   },
   rectTwo: {
     width: 70,
     height: 85,  
     resizeMode: 'contain',
+    marginLeft:10,
   },
 
    topTrack: {

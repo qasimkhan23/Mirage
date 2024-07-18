@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import {
    BackgroundEvent,
+   RectSc,
    LogoLeft,
    SLogo,
    LogoRight,
@@ -35,16 +36,19 @@ import styles from "./Styles";
 const EventScreen = ({ navigation }) => {
    return (
       <ImageBackground source={BackgroundEvent} style={[styles.container]}>
-         <View style={styles.topConta}>
-            <View style={styles.logoCont}>
+                <View style={styles.topConta}>
+            <TouchableOpacity style={styles.logoCont}
+            onPress={() => navigation.navigate("ShopScreen")}>
                <Image source={LogoLeft} style={styles.logo} />
                <Text style={styles.logoText}>5400</Text>
-            </View>
+            </TouchableOpacity>
 
-            <View style={styles.logoCont}>
+            <TouchableOpacity
+            onPress={() => navigation.navigate("PackScreen")}
+            style={styles.logoCont}>
                <Image source={LogoRight} style={styles.logo} />
                <Text style={styles.logoText}>234</Text>
-            </View>
+            </TouchableOpacity>
          </View>
          <View style={styles.pagelogo}>
             <TouchableOpacity
@@ -68,8 +72,13 @@ const EventScreen = ({ navigation }) => {
                      <Image source={Ticket} style={styles.ticket} />
                      <Image source={Star} style={styles.starImage} />
                   </View>
+                  
                   <View style={styles.ticketBottom}>
                      <Image source={RectOne} style={styles.rectOne} />
+                    <TouchableOpacity> 
+                     <Image source={RectSc} style={styles.rectSc} />
+                     </TouchableOpacity>
+
                      <TouchableOpacity>
                         <Image source={RectTwo} style={styles.rectTwo} />
                      </TouchableOpacity>
@@ -97,7 +106,8 @@ const EventScreen = ({ navigation }) => {
                         paddingVertical: 20,
                      }}
                   >
-                     <TouchableOpacity>
+                     <TouchableOpacity
+                     onPress={() => navigation.navigate("PlayerScreen")}>
                         <Image source={picOne} style={styles.image1} />
                         <View style={styles.textTrack}>
                            <Text style={styles.title}>One Kiss</Text>
@@ -122,7 +132,8 @@ const EventScreen = ({ navigation }) => {
                         </View>
                      </TouchableOpacity>
 
-                     <TouchableOpacity>
+                     <TouchableOpacity
+                     onPress={() => navigation.navigate("PlayerScreen")}>
                         <Image source={picTwo} style={styles.image2} />
                         <View style={styles.textTrack}>
                            <Text style={styles.title}>New Rules</Text>
@@ -134,7 +145,8 @@ const EventScreen = ({ navigation }) => {
                         </View>
                      </TouchableOpacity>
 
-                     <TouchableOpacity>
+                     <TouchableOpacity
+                     onPress={() => navigation.navigate("PlayerScreen")}>
                         <Image source={picOne} style={styles.image3} />
                         <View style={styles.textTrack}>
                            <Text style={styles.title}>One Kiss</Text>

@@ -44,15 +44,18 @@ const GalleryScreen = ({ navigation }) => {
       <ImageBackground source={GallBackground} style={[styles.container]}>
          <ScrollView style={styles.verticalScrollView}>
             <View style={styles.topConta}>
-            <View style={styles.logoCont}>
+            <TouchableOpacity style={styles.logoCont}
+            onPress={() => navigation.navigate("ShopScreen")}>
                <Image source={LogoLeft} style={styles.logo} />
                <Text style={styles.logoText}>5400</Text>
-            </View>
+            </TouchableOpacity>
 
-            <View style={styles.logoCont}>
+            <TouchableOpacity
+            onPress={() => navigation.navigate("PackScreen")}
+            style={styles.logoCont}>
                <Image source={LogoRight} style={styles.logo} />
                <Text style={styles.logoText}>234</Text>
-            </View>
+            </TouchableOpacity>
          </View>
          <View style={styles.pagelogo}>
             <TouchableOpacity
@@ -92,31 +95,31 @@ const GalleryScreen = ({ navigation }) => {
                   contentContainerStyle={{ paddingHorizontal: 20 }}
                >
                   <View style={styles.cardSec}>
-                     <TouchableOpacity>
+                     <TouchableOpacity onPress={()=>navigation.navigate("PlayerScreen",{index:0})}>
                         <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
                         </View>
                      </TouchableOpacity>
 
-                     <TouchableOpacity>
+                     <TouchableOpacity  onPress={()=>navigation.navigate("PlayerScreen",{index:1})}>
                         <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
                         </View>
                      </TouchableOpacity>
 
-                     <TouchableOpacity>
+                     <TouchableOpacity onPress={()=>navigation.navigate("PlayerScreen",{index:2})}>
                         <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
                         </View>
                      </TouchableOpacity>
 
-                     <TouchableOpacity>
+                     <TouchableOpacity onPress={()=>navigation.navigate("PlayerScreen",{index:3})}>
                        <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
                         </View>
                      </TouchableOpacity>
 
-                     <TouchableOpacity>
+                     <TouchableOpacity onPress={()=>navigation.navigate("PlayerScreen",{index:4})}>
                         <View style={styles.cards}>
                         <Image source={LegCar} style={styles.LCard} />
                         </View>

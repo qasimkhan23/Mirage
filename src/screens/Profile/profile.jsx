@@ -20,6 +20,8 @@ import {
    LogoRight,
    BackBtn,
    Top50,
+   SLogo,
+   FilterLogo,
    Rect,
    Track1,
    Track2,
@@ -40,18 +42,20 @@ import Footer from "../../components/Footer/Footer";
 const ProfileScreen = ({ navigation }) => {
    return (
       <ImageBackground source={ShopBackground} style={[styles.container]}>
-         <View style={styles.topConta}>
-            <View style={styles.logoCont}>
+          <View style={styles.topConta}>
+            <TouchableOpacity style={styles.logoCont}
+            onPress={() => navigation.navigate("ShopScreen")}>
                <Image source={LogoLeft} style={styles.logo} />
                <Text style={styles.logoText}>5400</Text>
-            </View>
+            </TouchableOpacity>
 
-            <View style={styles.logoCont}>
+            <TouchableOpacity
+            onPress={() => navigation.navigate("PackScreen")}
+            style={styles.logoCont}>
                <Image source={LogoRight} style={styles.logo} />
                <Text style={styles.logoText}>234</Text>
-            </View>
+            </TouchableOpacity>
          </View>
-
          <View style={styles.pagelogo}>
             <TouchableOpacity
                style={styles.backBtn}
@@ -70,10 +74,10 @@ const ProfileScreen = ({ navigation }) => {
                <View style={styles.profileContainer}>
                   {/* profile picture */}
                   <View style={styles.picContainer}>
-                     <View style={styles.picFrameContainer}>
+                     <TouchableOpacity style={styles.picFrameContainer}>
                         {/* <Image source={ProfilePicFrame} style={styles.picFrame}/> */}
                         <Image source={profilePic} style={styles.profilePic} />
-                     </View>
+                     </TouchableOpacity>
                   </View>
 
                   <View style={styles.totaCards}>
@@ -127,7 +131,7 @@ const ProfileScreen = ({ navigation }) => {
                <View style={styles.topTrack}>
                   <View style={styles.leftText}>
                      <Image source={Top50} style={styles.topIcon} />
-                     <Text style={styles.top50}> Mile's Top Tracks </Text>
+                     <Text style={styles.top50}> Miles's Top Tracks </Text>
                   </View>
                </View>
 
@@ -136,7 +140,8 @@ const ProfileScreen = ({ navigation }) => {
                   style={styles.trackSec}
                   contentContainerStyle={{ paddingHorizontal: 20 }}
                >
-                  <TouchableOpacity style={styles.num1}>
+                  <TouchableOpacity style={styles.num1}
+                  onPress={() => navigation.navigate("PlayerScreen")}>
                      <Image source={MilesNo1} style={styles.image1} />
                      <View style={styles.textTrack}>
                         <View style={styles.nameAndView}>
@@ -157,22 +162,8 @@ const ProfileScreen = ({ navigation }) => {
                      </View>
                   </TouchableOpacity>
 
-                  <TouchableOpacity style={styles.num2}>
-                     <Image source={MilesNo2} style={styles.image2} />
-                     <View style={styles.textTrack2}>
-                        <View style={styles.nameAndView}>
-                           <View style={styles.viewsline}>
-                              <Text style={styles.title}>Lose Yourself</Text>
-                              <View style={styles.starP}>
-                                 <Text style={styles.viewss}>21M</Text>
-                              </View>
-                           </View>
-                        </View>
-                        <Text style={styles.singerName}>Eminem</Text>
-                     </View>
-                  </TouchableOpacity>
-
-                  <TouchableOpacity style={styles.num2}>
+                  <TouchableOpacity style={styles.num2}
+                  onPress={() => navigation.navigate("PlayerScreen")}>
                      <Image source={MilesNo2} style={styles.image2} />
                      <View style={styles.textTrack2}>
                         <View style={styles.nameAndView}>
@@ -186,12 +177,43 @@ const ProfileScreen = ({ navigation }) => {
                         <Text style={styles.singerName}>Eminem</Text>
                      </View>
                   </TouchableOpacity>
+
+                  <TouchableOpacity style={styles.num2}
+                  onPress={() => navigation.navigate("PlayerScreen")}>
+                     <Image source={MilesNo2} style={styles.image2} />
+                     <View style={styles.textTrack2}>
+                        <View style={styles.nameAndView}>
+                           <View style={styles.viewsline}>
+                              <Text style={styles.title}>Lose Yourself</Text>
+                              <View style={styles.starP}>
+                                 <Text style={styles.views}>413K</Text>
+                              </View>
+                           </View>
+                        </View>
+                        <Text style={styles.singerName}>Eminem</Text>
+                     </View>
+                  </TouchableOpacity>
                </ScrollView>
 
                <View style={styles.cardTop}>
                   <Image source={CardLogo} style={styles.cardlogo} />
-                  <Text style={styles.eventText}>Mile's Cards</Text>
-               </View>
+                  <Text style={styles.eventText}>Miless's Cards</Text>
+               
+               <View style={styles.legendbox}>
+                     {/* <Image source={LegendRect} style={styles.legendRect}/> */}
+                     <Text style={styles.legendText}>LEGENDARY</Text>
+                  </View>
+                  <View style={styles.iconContainer}>
+                     <TouchableOpacity style={styles.searchBox}>
+                        <Text style={styles.searchText}>Search</Text>
+                        <Image source={SLogo} style={styles.sLogo} />
+                     </TouchableOpacity>
+                     <TouchableOpacity>
+                        <Image source={FilterLogo} style={styles.filterlogo} />
+                     </TouchableOpacity>
+                  </View></View>
+
+
 
                <ScrollView
                   horizontal

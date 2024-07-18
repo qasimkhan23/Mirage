@@ -12,6 +12,7 @@ import {
    blackBackground,
    GiftBox,
    WholwBar,
+   RectSc,
    Diamond,
    TaylorSwift,
    DateSec,
@@ -35,15 +36,18 @@ const HomeScreen = ({ navigation }) => {
    return (
       <ImageBackground source={blackBackground} style={[styles.container]}>
          <View style={styles.topConta}>
-            <View style={styles.logoCont}>
+            <TouchableOpacity style={styles.logoCont}
+            onPress={() => navigation.navigate("ShopScreen")}>
                <Image source={LogoLeft} style={styles.logo} />
                <Text style={styles.logoText}>5400</Text>
-            </View>
+            </TouchableOpacity>
 
-            <View style={styles.logoCont}>
+            <TouchableOpacity
+            onPress={() => navigation.navigate("PackScreen")}
+            style={styles.logoCont}>
                <Image source={LogoRight} style={styles.logo} />
                <Text style={styles.logoText}>234</Text>
-            </View>
+            </TouchableOpacity>
          </View>
 
          <View style={styles.bigContainer}>
@@ -54,9 +58,10 @@ const HomeScreen = ({ navigation }) => {
                <View style={styles.profileContainer}>
                   {/* profile picture */}
                   <View style={styles.picContainer}>
-                     <View style={styles.picFrameContainer}>
+                     <TouchableOpacity style={styles.picFrameContainer} 
+                     onPress={() => navigation.navigate("ProfileScreen")}>
                         <Image source={profilePic} style={styles.profilePic} />
-                     </View>
+                     </TouchableOpacity>
 
                      <View style={styles.logoTextContainer}>
                         <Image source={logoPackSmall} style={styles.picLogo} />
@@ -77,9 +82,9 @@ const HomeScreen = ({ navigation }) => {
                         <Text style={styles.level}>8</Text>
                      </View>
 
-                     <View style={styles.gBox}>
+                     <TouchableOpacity style={styles.gBox}>
                         <Image source={GiftBox} style={styles.boxPic} />
-                     </View>
+                     </TouchableOpacity>
                   </View>
                </View>
 
@@ -108,13 +113,19 @@ const HomeScreen = ({ navigation }) => {
                   <Image source={Diamond} style={styles.dimond} />
                </View>
 
-            <View style={styles.ticImage}>
-                  <View style={styles.ticketSec}>
+               <View style={styles.ticImage}>
+                  <TouchableOpacity style={styles.ticketSec}
+                  onPress={() => navigation.navigate("EventScreen")}>
                      <Image source={Ticket} style={styles.ticket} />
                      <Image source={Star} style={styles.starImage} />
-                  </View>
+                  </TouchableOpacity>
+                  
                   <View style={styles.ticketBottom}>
                      <Image source={RectOne} style={styles.rectOne} />
+                    <TouchableOpacity> 
+                     <Image source={RectSc} style={styles.rectSc} />
+                     </TouchableOpacity>
+
                      <TouchableOpacity>
                         <Image source={RectTwo} style={styles.rectTwo} />
                      </TouchableOpacity>

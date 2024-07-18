@@ -1,57 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
    Image,
-   Text,
-   TextInput,
-   TouchableOpacity,
-   View,
-   ScrollView,
    ImageBackground,
+   Text,
+   TouchableOpacity,
+   View
 } from "react-native";
 import {
-   Background,
-   rightCardP,
-   rightCardPr,
-   vpp,
-   vpP,
-   mpP,
-   mpp,
-   MonthPass,
-   VIPpass,
-   leftCardP,
-   leftCardPr,
-   LogoLeft,
-   LogoRight,
-   BackBtn,
-   Top50,
-   Rect,
-   Track1,
-   Track2,
-   trendF,
-   One,
-   Second,
-   Third,
-   AwardLogo,
-   ThreeDays,
-   PinkRect,
-   MusicLogo,
-   AwardOne,
-   AwardTwo,
    ShopBackground,
-   PopSec,
-   SubSec,
-   CardSec,
-   CardOne,
-   CardPa,
-   RadioStation,
-   image2,
+   Track2
 } from "../../../assets";
-import Footer from "../../components/Footer/Footer";
-import AudioSlider from "../../components/AudioSlider/AudioSlider";
 import AudioFile from "../../../assets/Ishq.mp3";
+import Song1 from '../../../assets/song1.mp3'
+import Song2 from '../../../assets/song2.mp3'
+import Song3 from '../../../assets/song3.mp3'
+import Song4 from '../../../assets/song4.mp3'
+import Song5 from '../../../assets/song5.mp3'
+import AudioSlider from "../../components/AudioSlider/AudioSlider";
+import Footer from "../../components/Footer/Footer";
 import styles from "./styles";
 
-const PlayerScreen = ({ navigation }) => {
+const PlayerScreen = ({ route,navigation }) => {
+   const AudioTracks = [Song1,Song2,Song3,Song4,Song5]
+  const { index } = route.params;
+
+   console.log('index',index)
    return (
       <ImageBackground source={ShopBackground} style={[styles.container]}>
          <View style={styles.bodyContainer}>
@@ -77,7 +50,7 @@ const PlayerScreen = ({ navigation }) => {
                marginBottom:100
             }}
          >
-            <AudioSlider audio={AudioFile} />
+            <AudioSlider audio={AudioTracks[index]} />
          </View>
           <Footer />
       </ImageBackground>
