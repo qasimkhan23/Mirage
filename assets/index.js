@@ -44,7 +44,7 @@ import monthlyPass from "./subpassL.png";
 import VIppass from "./subpassR.png";
 import MPPp from "./MPP1.png";
 import vPP from "./VPP.png";
-import rasa from "./rs.png";
+import rasa from "./radioS.png";
 import smallTic from "./smalltic.png";
 import levelFrame from "./levelframe.png";
 import miles from "./propicc.png";

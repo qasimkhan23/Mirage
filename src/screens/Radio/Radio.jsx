@@ -80,7 +80,9 @@ const RadioScreen = ({ navigation }) => {
          </View>
          <View style={styles.bigContainer}>
             <ScrollView style={styles.verticalScrollView}>
-               <View style={styles.aboveRadio}></View>
+               <View style={styles.aboveRadio}>
+                  <Text style={styles.radioT}>The radio space allows you to share your creations with the world and earn new cards.</Text>
+               </View>
                <TouchableOpacity style={styles.radioContainer}  onPress={()=>navigation.navigate("PlayerScreen",{index:0})}>
                   <Image source={RadioStation} style={styles.radioImage} />
                </TouchableOpacity>
