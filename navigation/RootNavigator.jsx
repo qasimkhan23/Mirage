@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import SplashStackScreens from "./SplashStack";
+// import SplashStackScreens from "./SplashStack";
 // import AuthStackScreens from "./AuthStack";
 // import BottomStackScreens from "./BottomStack";
 // import OtpSenderStackScreens from "./OtpSenderStack";
@@ -42,11 +42,10 @@ const AppNavigator = () => {
             <RootStack.Screen component={GalleryScreen} name="GalleryScreen" />
             <RootStack.Screen component={PackScreen} name="PackScreen" />
             <RootStack.Screen component={SignInScreen} name="SignInScreen" />
-            <RootStack.Screen component={ProfileScreen} name="ProfileScreen" />    
+            <RootStack.Screen component={ProfileScreen} name="ProfileScreen" />
             <RootStack.Screen component={PlayerScreen} name="PlayerScreen" />
-                        <RootStack.Screen component={StudioScreen} name="StudioScreen" />
+            <RootStack.Screen component={StudioScreen} name="StudioScreen" />
             <RootStack.Screen component={FinalScreen} name="FinalScreen" />
-
          </RootStack.Navigator>
       </NavigationContainer>
    );

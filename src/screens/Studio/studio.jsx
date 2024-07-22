@@ -9,7 +9,6 @@ import {
    ImageBackground,
 } from "react-native";
 import {
-   
    ShopBackground,
    PopSec,
    SubSec,
@@ -17,7 +16,7 @@ import {
    CardOne,
    CardPa,
    RadioStation,
-   StudioScreenImage
+   StudioScreenImage,
 } from "../../../assets";
 import Footer from "../../components/Footer/Footer";
 import styles from "./styles";
@@ -26,7 +25,10 @@ const StudioScreen = ({ navigation }) => {
    return (
       <ImageBackground source={ShopBackground} style={[styles.container]}>
          <View>
-            <Image source={StudioScreenImage} style={{resizeMode:'contain',height:'100%'}} />
+            <Image
+               source={StudioScreenImage}
+               style={{ resizeMode: "contain", height: "100%" }}
+            />
          </View>
          <Footer />
       </ImageBackground>

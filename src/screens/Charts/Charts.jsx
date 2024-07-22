@@ -34,16 +34,19 @@ import styles from "./Styles";
 const ChartsScreen = ({ navigation }) => {
    return (
       <ImageBackground source={Background} style={[styles.container]}>
-          <View style={styles.topConta}>
-            <TouchableOpacity style={styles.logoCont}
-            onPress={() => navigation.navigate("ShopScreen")}>
+         <View style={styles.topConta}>
+            <TouchableOpacity
+               style={styles.logoCont}
+               onPress={() => navigation.navigate("ShopScreen")}
+            >
                <Image source={LogoLeft} style={styles.logo} />
                <Text style={styles.logoText}>5400</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-            onPress={() => navigation.navigate("PackScreen")}
-            style={styles.logoCont}>
+               onPress={() => navigation.navigate("PackScreen")}
+               style={styles.logoCont}
+            >
                <Image source={LogoRight} style={styles.logo} />
                <Text style={styles.logoText}>234</Text>
             </TouchableOpacity>
@@ -80,9 +83,7 @@ const ChartsScreen = ({ navigation }) => {
                   style={styles.trackSec}
                   contentContainerStyle={{ paddingHorizontal: 20 }}
                >
-                  <TouchableOpacity
-                     onPress={() => navigation.navigate("PlayerScreen")}
-                  >
+                  {/* <TouchableOpacity>
                      <Image source={Track1} style={styles.image1} />
                      <View style={styles.textTrack}>
                         <Text style={styles.title}>Hit Me Hard And Soft</Text>
@@ -91,11 +92,9 @@ const ChartsScreen = ({ navigation }) => {
                            By <Text style={styles.changeColor}>Miles</Text>
                         </Text>
                      </View>
-                  </TouchableOpacity>
+                  </TouchableOpacity> */}
 
-                  <TouchableOpacity 
-                  onPress={() => navigation.navigate("PlayerScreen")}
-                  >
+                  <TouchableOpacity>
                      <Image source={Track2} style={styles.image2} />
                      <View style={styles.textTrack}>
                         <Text style={styles.title}>Bohemian Rhapsody</Text>
@@ -106,8 +105,7 @@ const ChartsScreen = ({ navigation }) => {
                      </View>
                   </TouchableOpacity>
 
-                  <TouchableOpacity
-                  onPress={() => navigation.navigate("PlayerScreen")}>
+                  <TouchableOpacity>
                      <Image source={Track1} style={styles.image3} />
                      <View style={styles.textTrack}>
                         <Text style={styles.title}>Hit Me Hard And Soft</Text>
@@ -134,10 +132,7 @@ const ChartsScreen = ({ navigation }) => {
                   style={styles.trendSec}
                   contentContainerStyle={{ paddingHorizontal: 20 }}
                >
-                  <TouchableOpacity
-                     style={styles.siee}
-                     onPress={() => navigation.navigate("ProfileScreen")}
-                  >
+                  <TouchableOpacity style={styles.siee}>
                      <Image source={One} style={styles.sieImg} />
                      <Text style={styles.name}>Sierra Farrel</Text>
                   </TouchableOpacity>
@@ -168,8 +163,7 @@ const ChartsScreen = ({ navigation }) => {
                         </Text>
                      </View>
                   </View>
-                  <TouchableOpacity style={styles.voteText}
-                  onPress={() => navigation.navigate("PlayerScreen")}>
+                  <TouchableOpacity style={styles.voteText}>
                      <Image source={PinkRect} style={styles.rectanglee} />
                      <Image source={MusicLogo} style={styles.logomusic} />
                      <Text style={styles.rectaText}>VOTE NOW</Text>
@@ -181,19 +175,15 @@ const ChartsScreen = ({ navigation }) => {
                   style={styles.awardImages}
                   contentContainerStyle={{ paddingHorizontal: 20 }}
                >
-                  <TouchableOpacity
-                     onPress={() => navigation.navigate("PlayerScreen")}
-                  >
+                  <TouchableOpacity>
                      <Image source={AwardOne} style={styles.awardImages1} />
                   </TouchableOpacity>
 
-                  <TouchableOpacity
-                  onPress={() => navigation.navigate("PlayerScreen")}>
+                  <TouchableOpacity>
                      <Image source={AwardTwo} style={styles.awardImages2} />
                   </TouchableOpacity>
 
-                  <TouchableOpacity
-                  onPress={() => navigation.navigate("PlayerScreen")}>
+                  <TouchableOpacity>
                      <Image source={AwardOne} style={styles.awardImages3} />
                   </TouchableOpacity>
                </ScrollView>

@@ -79,13 +79,13 @@ import background from "./evbc.png";
 // import packBackground from "./pBg.png";
 import blackbackground from "./blBg.png";
 // import background from "./Background.png";
-import splash from "./splash.png";
+import splash from "./splashScreen.png";
 import footerBackground from "./footerBackground.png";
 import footerHome from "./footerHome.png";
 import footerStudio from "./footerStudio.png";
 import footerRadio from "./footerRadio.png";
 import footerCharts from "./footerCharts.png";
-import studioScreen from "./studioScreen.png"
+import studioScreen from "./studioScreen.png";
 
 export const Track1 = track1;
 export const Track2 = track2;
@@ -167,7 +167,7 @@ export const BackgroundEvent = backgroundEvent;
 export const Background = background;
 // export const PackBackground = packBackground;
 export const blackBackground = blackbackground;
-export const Splash = splash;
+export const splashScreen = splash;
 export const FooterBackground = footerBackground;
 export const FooterHome = footerHome;
 export const FooterStudio = footerStudio;

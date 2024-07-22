@@ -1,27 +1,40 @@
 {
-  "expo": {
-    "name": "Mirage",
-    "slug": "Mirage",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+   "expo": {
+      "name": "Mirage",
+      "slug": "Mirage",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/appIcon.png",
+      "userInterfaceStyle": "light",
+      "splash": {
+         "image": "./assets/splashScreen.png",
+         "resizeMode": "cover",
+         "backgroundColor": "#ffffff"
+      },
+      "ios": {
+         "supportsTablet": true,
+         "bundleIdentifier": "com.qasimkhan13.Mirage"
+      },
+      "android": {
+         "adaptiveIcon": {
+            "foregroundImage": "./assets/adaptive-icon.png",
+            "backgroundColor": "#ffffff"
+         },
+         "package": "com.qasimkhan13.Mirage"
+      },
+      "web": {
+         "favicon": "./assets/favicon.png"
+      },
+      "extra": {
+         "eas": {
+            "projectId": "1a8f07ba-d8c7-4b49-8006-4dfafad43da6"
+         }
+      },
+      "runtimeVersion": {
+         "policy": "appVersion"
+      },
+      "updates": {
+         "url": "https://u.expo.dev/1a8f07ba-d8c7-4b49-8006-4dfafad43da6"
       }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+   }
 }

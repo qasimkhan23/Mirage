@@ -34,7 +34,7 @@ import {
    Google,
    Outlook,
    Facebook,
-   Splash,
+   SplashScreen,
    MiLogo,
    MILogo,
 } from "../../../assets";
@@ -42,26 +42,29 @@ import {
 import styles from "./styles";
 
 const FinalScreen = ({ navigation }) => {
-    const openLink = () => {
-    Linking.openURL('https://demo.miragemusic.co/');
-  };
+   const openLink = () => {
+      Linking.openURL("https://demo.miragemusic.co/");
+   };
    return (
-      <ImageBackground source={Splash} style={[styles.container]}>
+      <ImageBackground source={SplashScreen} style={[styles.container]}>
          <View style={styles.bigContainer}>
-            
-  <View style={styles.rightText} onPress={()=>navigation.navigate("HomeScreen")}>
-                    <View style={styles.allText}>
-                     <Text style={styles.rectText}> Be part of the next Music Revolution. Support Mirage
-                        <View style={styles.Logo}>
-                        <Image source={MILogo} style={styles.logo}/>
-                        </View>
-                       
-                        <TouchableOpacity onPress={openLink}>
-                        <Text style={styles.linkText} >miragemusic.co</Text>
-                        </TouchableOpacity> </Text>
-                  </View>
-                  </View>
-
+            <View
+               style={styles.rightText}
+               onPress={() => navigation.navigate("HomeScreen")}
+            >
+               <View style={styles.allText}>
+                  <Text style={styles.rectText}>
+                     {" "}
+                     Be part of the next Music Revolution. Support Mirage
+                     <View style={styles.Logo}>
+                        <Image source={MILogo} style={styles.logo} />
+                     </View>
+                     <TouchableOpacity onPress={openLink}>
+                        <Text style={styles.linkText}>miragemusic.co</Text>
+                     </TouchableOpacity>{" "}
+                  </Text>
+               </View>
+            </View>
          </View>
          {/* <Footer /> */}
       </ImageBackground>
