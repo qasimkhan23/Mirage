@@ -92,6 +92,16 @@ container: {
     width:370,
     height:100,
    },
+   radioT:{
+      color: '#fff',
+      fontSize:18,
+      fontFamily:'regular',
+      marginTop:25,
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      paddingHorizontal:10,
+   },
 
    radioContainer:{
     display:"flex",
