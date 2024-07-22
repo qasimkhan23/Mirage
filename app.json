@@ -17,7 +17,7 @@
       },
       "android": {
          "adaptiveIcon": {
-            "foregroundImage": "./assets/adaptive-icon.png",
+            "foregroundImage": "./assets/appIcon.png",
             "backgroundColor": "#ffffff"
          },
          "package": "com.qasimkhan13.Mirage"
