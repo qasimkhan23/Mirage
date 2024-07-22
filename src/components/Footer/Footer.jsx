@@ -15,6 +15,11 @@ import {
    FooterHome,
    TaylorSwift,
    FooterStudio,
+   FooterProfile,
+   FooterEvents,
+   FooterPacks,
+   FooterGallery,
+   FooterContact,
    FooterRadio,
    FooterCharts,
 } from "../../../assets";
@@ -35,28 +40,60 @@ const BottomNavBar = () => {
             source={FooterBackground}
             style={styles.backgroundImg}
          >
-            <View style={styles.iconsContainer}>
-               <TouchableOpacity
-                  onPress={() => navigation.navigate("HomeScreen")}
+            <ScrollView horizontal style={styles.iconsContainer}>
+               <View
+                  style={{
+                     flexDirection: "row",
+                     alignItems: "center",
+                  }}
                >
-                  <Image source={FooterHome} style={styles.homeIcon} />
-               </TouchableOpacity>
-               <TouchableOpacity
-                  onPress={() => navigation.navigate("StudioScreen")}
-               >
-                  <Image source={FooterStudio} style={styles.studioIcon} />
-               </TouchableOpacity>
-               <TouchableOpacity
-                  onPress={() => navigation.navigate("RadioScreen")}
-               >
-                  <Image source={FooterRadio} style={styles.radioIcon} />
-               </TouchableOpacity>
-               <TouchableOpacity
-                  onPress={() => navigation.navigate("ChartsStack")}
-               >
-                  <Image source={FooterCharts} style={styles.chartsIcon} />
-               </TouchableOpacity>
-            </View>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("HomeScreen")}
+                  >
+                     <Image source={FooterHome} style={styles.homeIcon} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("ProfileScreen")}
+                  >
+                     <Image source={FooterProfile} style={styles.profileIcon} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("EventScreen")}
+                  >
+                     <Image source={FooterEvents} style={styles.studioIcon} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("PackScreen")}
+                  >
+                     <Image source={FooterPacks} style={styles.studioIcon} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("GalleryScreen")}
+                  >
+                     <Image source={FooterGallery} style={styles.studioIcon} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("StudioScreen")}
+                  >
+                     <Image source={FooterStudio} style={styles.studioIcon} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("RadioScreen")}
+                  >
+                     <Image source={FooterRadio} style={styles.radioIcon} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("ChartsStack")}
+                  >
+                     <Image source={FooterCharts} style={styles.chartsIcon} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                     onPress={() => navigation.navigate("FinalScreen")}
+                  >
+                     <Image source={FooterContact} style={styles.chartsIcon} />
+                  </TouchableOpacity>
+               </View>
+            </ScrollView>
          </ImageBackground>
       </View>
    );

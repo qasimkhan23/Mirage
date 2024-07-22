@@ -29,6 +29,11 @@ const styles = StyleSheet.create({
       height: 40,
       resizeMode: "contain",
    },
+   profileIcon: {
+      width: 100,
+      height: 40,
+      resizeMode: "contain",
+   },
    radioIcon: {
       width: 100,
       height: 40,
@@ -41,8 +46,7 @@ const styles = StyleSheet.create({
    },
    iconsContainer: {
       display: "flex",
-      flexDirection: "row",
-      alignItems: "center",
+
       flex: 1,
    },
 });

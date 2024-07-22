@@ -30,11 +30,10 @@
             "projectId": "1a8f07ba-d8c7-4b49-8006-4dfafad43da6"
          }
       },
-      "runtimeVersion": {
-         "policy": "appVersion"
-      },
+      "runtimeVersion": "1.0.2",
       "updates": {
          "url": "https://u.expo.dev/1a8f07ba-d8c7-4b49-8006-4dfafad43da6"
-      }
+      },
+      "plugins": ["expo-router"]
    }
 }

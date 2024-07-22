@@ -34,7 +34,7 @@ import {
    Google,
    Outlook,
    Facebook,
-   SplashScreen,
+   FinalBG,
    MiLogo,
    MILogo,
 } from "../../../assets";
@@ -46,7 +46,7 @@ const FinalScreen = ({ navigation }) => {
       Linking.openURL("https://demo.miragemusic.co/");
    };
    return (
-      <ImageBackground source={SplashScreen} style={[styles.container]}>
+      <ImageBackground source={FinalBG} style={[styles.container]}>
          <View style={styles.bigContainer}>
             <View
                style={styles.rightText}
