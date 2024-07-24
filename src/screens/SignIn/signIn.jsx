@@ -32,7 +32,7 @@ import {
    ShopBackground,
    Google,
    Outlook,
-   Facebook
+   Facebook,
 } from "../../../assets";
 // import Footer from "../../components/Footer/Footer";
 import styles from "./styles";
@@ -41,19 +41,27 @@ const SignInScreen = ({ navigation }) => {
    return (
       <ImageBackground source={ShopBackground} style={[styles.container]}>
          <View style={styles.bigContainer}>
-            
-  <TouchableOpacity style={styles.rightText} onPress={()=>navigation.navigate("HomeScreen")}>
-                     <Image source={Google} style={styles.gLogo}/>
-                     <Text style={styles.rectText}>Sign In With Goole</Text>
-                  </TouchableOpacity>
-<TouchableOpacity style={styles.rightText}  onPress={()=>navigation.navigate("HomeScreen")}>
-                     <Image source={Facebook} style={styles.gLogo}/>
-                     <Text style={styles.rectText}>Sign In With Facebook</Text>
-                  </TouchableOpacity>
-<TouchableOpacity style={styles.rightText} >
-                      <Image source={Spotify} style={styles.gLogo}/>
-                     <Text style={styles.rectText}>Sign In With Spotify</Text>
-                  </TouchableOpacity>
+            <TouchableOpacity
+               style={styles.rightText}
+               onPress={() => navigation.navigate("HomeScreen")}
+            >
+               <Image source={Google} style={styles.gLogo} />
+               <Text style={styles.rectText}>Sign In With Goole</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+               style={styles.rightText}
+               onPress={() => navigation.navigate("HomeScreen")}
+            >
+               <Image source={Facebook} style={styles.gLogo} />
+               <Text style={styles.rectText}>Sign In With Facebook</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+               style={styles.rightText}
+               onPress={() => navigation.navigate("HomeScreen")}
+            >
+               <Image source={Spotify} style={styles.gLogo} />
+               <Text style={styles.rectText}>Sign In With Spotify</Text>
+            </TouchableOpacity>
          </View>
          {/* <Footer /> */}
       </ImageBackground>

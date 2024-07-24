@@ -28,7 +28,7 @@ const AppNavigator = () => {
    return (
       <NavigationContainer>
          <RootStack.Navigator
-            initialRouteName={"HomeScreen"}
+            initialRouteName={"SignInScreen"}
             screenOptions={{ headerShown: false }}
          >
             <RootStack.Screen

@@ -4,7 +4,7 @@
       "slug": "Mirage",
       "version": "1.0.0",
       "orientation": "portrait",
-      "icon": "./assets/appIcon.png",
+      "icon": "./assets/ap-icon.png",
       "userInterfaceStyle": "light",
       "splash": {
          "image": "./assets/splashScreen.png",
@@ -17,7 +17,7 @@
       },
       "android": {
          "adaptiveIcon": {
-            "foregroundImage": "./assets/appIcon.png",
+            "foregroundImage": "./assets/ap-icon.png",
             "backgroundColor": "#ffffff"
          },
          "package": "com.qasimkhan13.Mirage"
@@ -30,7 +30,7 @@
             "projectId": "1a8f07ba-d8c7-4b49-8006-4dfafad43da6"
          }
       },
-      "runtimeVersion": "1.0.2",
+      "runtimeVersion": "1.0.3",
       "updates": {
          "url": "https://u.expo.dev/1a8f07ba-d8c7-4b49-8006-4dfafad43da6"
       },
